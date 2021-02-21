@@ -1,0 +1,13 @@
+[{
+    "img": {
+        "item_top": "./image/dimg1.jpg",
+        "small_show": ["./image/dimg1.jpg", "./image/dian2.jpg", "./image/dian3.jpg", "./image/dian4.jpg", "./image/dian5.jpg"]
+    },
+
+    "product_information": {
+        "name": "CHiQ 65英寸超薄人工智能4.0IoT物联杜比视界电视 65Q6S",
+        "price": "6545.00",
+        "service": "由长虹官方发货并提供服务",
+        "brand": "彩虹长虹网点"
+    }
+}]

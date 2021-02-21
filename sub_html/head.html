@@ -1,0 +1,612 @@
+<style>
+    /* 头部导航 */
+    
+    #head .container a,
+    #head .container span {
+        color: #84878c;
+    }
+    
+    #head ul li {
+        float: left;
+        color: #8a878c;
+    }
+    
+    #head ul li:hover .hover {
+        color: #b30fd2;
+    }
+    
+    #head ul li:hover .hover span {
+        color: #b30fd2;
+    }
+    /* 给所有二级菜单内的span加浮动 */
+    
+    #head .display .mark span {
+        float: left;
+    }
+    /* 头部左边 */
+    
+    #head .head_left {
+        float: left;
+    }
+    
+    #head .head_left .home {
+        float: left;
+        height: 30px;
+        line-height: 30px;
+    }
+    
+    #head .head_left .home span {
+        float: left;
+    }
+    
+    #head .head_left .home:hover span {
+        color: #b30fd2;
+    }
+    
+    #head .head_left .home .home_icon {
+        float: left;
+        width: 15px;
+        height: 15px;
+        background: url(./images/ui.png) no-repeat -16px -1360px;
+        margin-top: 7px;
+        margin-right: 4px;
+    }
+    
+    #head .head_left .home i {
+        float: left;
+        margin: 0 0 0 8px;
+        color: #ccc;
+    }
+    
+    #head .head_left .display {
+        float: left;
+    }
+    
+    #head .head_left .mark {
+        float: left;
+    }
+    
+    #head .head_left .mark:hover .hover {
+        color: #b30fd2;
+    }
+    
+    .head_left .display .son li {
+        height: 55px;
+        line-height: 55px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    
+    .head_left .display .son li .ui_tiger {
+        float: left;
+        height: 55px;
+        cursor: pointer;
+        width: 55px;
+        background: url(./images/ui.png) no-repeat 0 -337px;
+    }
+    
+    .head_left .display .son li .welcome {
+        margin-left: 15px;
+    }
+    
+    .head_left .display .welcome a {
+        margin-left: 10px;
+        color: #006699;
+    }
+    
+    #head .head_left .display .son {
+        width: 320px;
+        height: 100px;
+    }
+    /* 登录 */
+    
+    .head_left .login_text {
+        float: left;
+        margin-left: 20px;
+    }
+    
+    .head_left .login_text:hover {
+        color: #b30fd2!important;
+    }
+    /* 注册有礼 */
+    
+    .head_left .register_gift {
+        float: left;
+        margin-left: 10px;
+    }
+    
+    .head_left .register_gift .gift_text {
+        color: #b30fd2!important;
+    }
+    
+    .head_left .gift {
+        float: left;
+        margin-top: 9px;
+        margin-left: 5px;
+        width: 12px;
+        height: 13px;
+        line-height: 30px;
+        background-size: 12px 13px;
+        background: url(./images/ui.png) no-repeat -145px -1496px;
+    }
+    /* 头部右侧 */
+    
+    .head_right {
+        float: right;
+    }
+    
+    .head_right .mine_order {
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .head_right .display {
+        float: left;
+        margin-right: 18px;
+    }
+    /* 个人中心 */
+    
+    .head_right .person_center a {
+        float: left;
+    }
+    /* 个人中心二级菜单  */
+    
+    .head_right .person_center .son {
+        width: 240px;
+        height: 212px;
+        padding: 15px 10px;
+    }
+    
+    .head_right .person_center .son div h6 {
+        float: left;
+        height: 25px;
+        line-height: 25px;
+    }
+    
+    .head_right .person_center .son div a {
+        float: left;
+        color: #006699;
+        font-weight: 700;
+        height: 25px;
+        line-height: 25px;
+    }
+    
+    .head_right .person_center .son ul {
+        float: left;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    
+    .head_right .person_center .son ul li {
+        float: left;
+        width: 49%;
+        height: 25px;
+        line-height: 25px;
+    }
+    
+    .head_right .person_center .son ul li a {
+        float: left;
+        width: 100%;
+        height: 25px;
+        line-height: 25px;
+    }
+    
+    .head_right .person_center .son .my_foot {
+        float: left;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+    }
+    
+    .head_right .person_center .son .foot_nav {
+        float: left;
+        width: 260px;
+        margin-left: -10px;
+        text-indent: 10px;
+        background-color: #f8f8f8;
+    }
+    
+    .head_right .person_center .son .foot {
+        float: left;
+        text-indent: 10px;
+        height: 44px;
+        line-height: 44px;
+    }
+    
+    .head_right .person_center .son li .foot_ui {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .head_right .person_center .son li .foot_ui li {
+        width: 55px;
+        height: 55px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #fff;
+    }
+    
+    .head_right .person_center .son li .foot_ui li a {
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        background: url(./images/ui.png) no-repeat 0 -397px;
+    }
+    /* 企业采购 */
+    
+    .head_right .purchase .son {
+        width: 230px;
+        height: 230px;
+        line-height: 230px;
+        left: -152px;
+        text-align: center;
+    }
+    
+    .head_right .purchase .son li {
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    
+    .head_right .purchase .son li a {
+        float: left;
+        height: 200px;
+        width: 200px;
+        background: url(./images/ui.png) no-repeat 0 -1511px;
+    }
+    /* 服务中心 */
+    
+    .head_right .service_center .son {
+        float: left;
+        width: 210px;
+        padding: 15px 15px 0 15px;
+    }
+    
+    .head_right .service_center .service_icon {
+        float: left;
+        width: 25px;
+        height: 19px;
+        margin-top: 6px;
+        background: url(./images/ui.png) no-repeat -20px -513px;
+    }
+    
+    .head_right .service_center .son h6:hover,
+    .head_right .service_center .son ul li:hover a {
+        color: #b30fd2;
+    }
+    
+    .head_right .service_center .son ul li {
+        float: left;
+        width: 33%;
+        height: 25px;
+        line-height: 25px;
+    }
+    
+    .head_right .service_center .son h6 {
+        height: 30px;
+        line-height: 30px;
+    }
+    
+    .head_right .service_center .son ul {
+        padding-bottom: 6px;
+    }
+    
+    .head_right .service_center .son .son_online {
+        float: left;
+        width: 210px;
+        height: 25px;
+        line-height: 25px;
+        background-color: #b30fd2;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .head_right .service_center .son .son_online .online_icon {
+        float: left;
+        margin: 3px 7px 0 69px;
+        width: 20px;
+        height: 19px;
+        background-color: #b30fd2;
+        background: url(./images/ui.png) no-repeat -212px -513px;
+    }
+    
+    .head_right .service_center .son .son_online .online_text {
+        float: left;
+        height: 25px;
+        line-height: 25px;
+        color: #fff;
+        font-weight: 800;
+    }
+    /* 网站导航区 */
+    
+    .head_right .web_nav .son {
+        padding: 25px 0;
+        width: 1198px;
+        height: 198px;
+        left: -1013px;
+    }
+    
+    .head_right .web_nav .son>li {
+        margin-left: 40px;
+    }
+    
+    .head_right .web_nav .son>li h6 {
+        height: 16px;
+        line-height: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .head_right .web_nav .son>li ul {
+        height: 147px;
+        border-right: 1px solid #ddd;
+    }
+    
+    .head_right .web_nav .son>li .item_sell {
+        width: 240px;
+    }
+    
+    .head_right .web_nav .son>li .item_sell li {
+        float: left;
+        width: 33%;
+    }
+    
+    .head_right .web_nav .son>li .item_sell li:hover a {
+        color: #b30fd2;
+    }
+    
+    .head_right .web_nav .son>li .item_sell li a {
+        float: left;
+        height: 24px;
+        line-height: 24px;
+    }
+    
+    .head_right .web_nav .son .special_classify {
+        width: 390px;
+    }
+    
+    .head_right .web_nav .son .special_classify li {
+        float: left;
+        width: 20%;
+    }
+    
+    .head_right .web_nav .son .special_classify li:hover {
+        color: #b30fd2;
+    }
+    
+    .head_right .web_nav .son .convenient {
+        width: 165px;
+    }
+    
+    .head_right .web_nav .son .convenient li {
+        width: 50%;
+        float: left;
+    }
+    
+    .head_right .web_nav .son .convenient li:hover {
+        color: #b30fd2;
+    }
+    
+    .head_right .web_nav .son .more_hot {
+        width: 90px;
+    }
+    
+    .head_right .web_nav .son .more_hot li {
+        float: left;
+        width: 100%;
+    }
+    
+    .head_right .web_nav .son .more_hot li:hover {
+        color: #b30fd2;
+    }
+    
+    .head_right .web_nav .son .guomei {
+        width: 90px;
+        border-right: none;
+    }
+    
+    .head_right .web_nav .son .guomei li {
+        float: left;
+        width: 100%;
+    }
+    
+    .head_right .web_nav .son .guomei li:hover {
+        color: #b30fd2;
+    }
+    
+    .head_right .happy_app .mark .phone_icon {
+        float: left;
+        margin-top: 1px;
+        color: #b30fd2;
+    }
+    
+    .head_right .happy_app .son {
+        float: left;
+        width: 124px;
+        height: 162px;
+        left: -53px;
+        padding: 19px 18px;
+    }
+    
+    .head_right .happy_app .son span {
+        float: left;
+        width: 129px;
+        height: 170px;
+        background: url(./images/ui.png) no-repeat 0 -799px;
+    }
+    
+    .head_right .happy_app:hover span {
+        color: #b30fd2;
+    }
+</style>
+
+<div class="container clearfix">
+
+    <div class="head_left clearfix">
+
+        <!-- 真快乐首页 -->
+        <a class="home" href="./index.html"><span class="home_icon"></span><span>真快乐首页</span><i>|</i></a>
+        <!-- 会员一级菜单 -->
+        <div class="display clearfix happy_vip">
+
+            <a class="mark rotate" href=""><span class="hover">真快乐会员</span> <span class="iconfont arrow">&#xe686;</span></a>
+            <!-- 二级菜单 -->
+            <ul class="son">
+                <li>
+                    <span class="ui_tiger"></span>
+                    <span class="welcome">欢迎来到真快乐<a href="./login.html">请登录</a> </span>
+                </li>
+            </ul>
+        </div>
+        <a class="login_text" href="./login.html">登录</a>
+        <a class="register_gift" href=""><span class="gift_text">注册有礼</span></a><span class="gift"></span>
+    </div>
+    <ul class="head_right">
+        <!-- 我的订单区 -->
+        <li class="clearfix">
+            <a href="" class="mine_order hover">我的订单</a>
+        </li>
+        <!-- 个人中心区 -->
+        <li class="display person_center clearfix">
+            <a class="mark rotate hover" href=""><span >个人中心</span> <span class="iconfont arrow">&#xe686;</span></a>
+            <ul class="son">
+                <div>
+                    <h6>个人中心.</h6><a href="./login.html">请登录</a>
+                </div>
+                <ul class="clearfix">
+                    <li><a href="">待处理订单</a></li>
+                    <li><a href="">我的收藏</a></li>
+                    <li><a href="">个人资料</a></li>
+                </ul>
+                <li><a class="my_foot" href="">我的足迹真快乐券&nbsp;-</a></li>
+                <li class="foot_nav"><a class="foot" href="">足迹</a>
+                    <ul class="foot_ui clearfix">
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+        <!-- 企业采购区 -->
+        <li class="display purchase">
+            <a class="mark rotate hover" href=""><span class="hover">企业采购</span><span class="iconfont arrow">&#xe686;</span> </a>
+            <ul class="son">
+                <li class="clearfix">
+                    <a class="code" href=""></a>
+                </li>
+            </ul>
+        </li>
+        <!-- 服务中心区 -->
+        <li class="display service_center">
+            <a class="mark rotate hover" href=""> <span class="service_icon"></span><span>服务中心</span> <span class="iconfont arrow">&#xe686;</span> </a>
+            <!-- 二级菜单 -->
+            <ul class="son">
+                <h6>用户服务</h6>
+                <ul class="clearfix">
+                    <li><a href="">售后服务</a></li>
+                    <li><a href="">帮助服务</a></li>
+                    <li><a href="">新手指南</a></li>
+                    <li><a href="">客服服务</a></li>
+                    <li><a href="">用户注销</a></li>
+                </ul>
+                <h6>商家服务</h6>
+                <ul class="clearfix">
+                    <li><a href="">招商合作</a></li>
+                    <li><a href="">商家登录</a></li>
+                    <li><a href="">广告平台</a></li>
+                    <li><a href="">平台规则</a></li>
+                    <li><a href="">商家培训</a></li>
+                </ul>
+                <a class="son_online" href=""><span class="online_icon"></span><span class="online_text">在线客服</span> </a>
+            </ul>
+        </li>
+        <!-- 网站导航区 -->
+        <li class="display web_nav">
+            <a class="mark rotate hover" href=""><span >网站导航</span><span class="iconfont arrow">&#xe686;</span> </a>
+            <ul class="son">
+                <li>
+                    <h6>主题促销</h6>
+                    <ul class="item_sell clearfix">
+                        <li><a href="">抢购</a></li>
+                        <li><a href="">服饰城</a></li>
+                        <li><a href="">智能</a></li>
+                        <li><a href="">超市</a></li>
+                        <li><a href="">家居</a></li>
+                        <li><a href="">家装</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h6>特色分类</h6>
+
+                    <ul class="special_classify">
+                        <li><a href="">电视影音</a></li>
+                        <li><a href="">手机</a></li>
+                        <li><a href="">住宅家具</a></li>
+                        <li><a href="">服饰鞋帽</a></li>
+                        <li><a href="">食品酒水</a></li>
+                        <li><a href="">冰洗</a></li>
+                        <li><a href="">数码</a></li>
+                        <li><a href="">家装建材</a></li>
+                        <li><a href="">运动户外</a></li>
+                        <li><a href="">母婴玩具</a></li>
+                        <li><a href="">洗衣机</a></li>
+                        <li><a href="">电脑办公</a></li>
+                        <li><a href="">家居日用</a></li>
+                        <li><a href="">箱包著品</a></li>
+                        <li><a href="">美妆个护</a></li>
+                        <li><a href="">空调</a></li>
+                        <li><a href="">精品配件</a></li>
+                        <li><a href="">床品家纺</a></li>
+                        <li><a href="">厨卫生活</a></li>
+                        <li>
+                            <a href="">钟表首饰</a>
+                        </li>
+                        <li><a href="">汽车</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h6>便捷服务</h6>
+                    <ul class="convenient">
+                        <li><a href="">话费充值</a></li>
+                        <li><a href="">上门服务</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h6>更多热点</h6>
+                    <ul class="more_hot">
+                        <li><a href="">加盟国美</a></li>
+                        <li><a href="">招商合作</a></li>
+                        <li><a href="">企业采购</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h6>国美旗下</h6>
+                    <ul class="guomei">
+                        <li><a href="">国美管家</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <!-- 真快乐APP -->
+        <li class="display happy_app">
+            <a class="mark rotate" href=""><span class="iconfont phone_icon">&#xe61c;</span><span>真快乐APP</span><span class="iconfont arrow">&#xe686;</span></a>
+            <a class="son">
+                <span></span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script>
+</script>

@@ -1,0 +1,180 @@
+html,
+body {
+    width: 100%;
+    background-color: #fff;
+}
+
+ul li {
+    float: left;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 头部导航 */
+
+#head {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f8f8f8;
+}
+
+
+/* 一级菜单共同设置 */
+
+.display {
+    height: 30px;
+    position: relative;
+    z-index: 21;
+}
+
+
+/* 遮住二级菜单属性设置 */
+
+.display .mark {
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #f8f8f8;
+    position: relative;
+    z-index: 20;
+    border-bottom: none;
+    padding: 0 7px;
+    float: left;
+}
+
+.display:hover .mark {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    /* 鼠标移入的时候，两像素padding，在mark的层级高*/
+    /*于二级菜单的时候，正好覆盖 */
+    padding-bottom: 2px;
+    border-bottom: #fff;
+}
+
+
+/* 二级菜单属性设置 */
+
+.display .son {
+    display: none;
+    border: 1px solid #fff;
+    background-color: #fff;
+    position: absolute;
+    top: 29px;
+    left: 0px;
+}
+
+
+/* 鼠标移入，所有二级菜单a标签字体变红 */
+
+.display .son li:hover>a {
+    color: #b30fd2;
+}
+
+.display:hover .son {
+    display: block!important;
+    border: 1px solid #ddd;
+    z-index: 10;
+}
+
+
+/* 鼠标移入，箭头旋转特效 */
+
+.rotate .arrow {
+    float: left;
+}
+
+.rotate:hover .arrow {
+    transform: rotate(-180deg);
+}
+
+
+/* 鼠标移入，字体颜色变紫共用特效 */
+
+
+/* 箭头 */
+
+.prevs {
+    position: absolute;
+    text-align: center;
+    /* width: 35px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 0 18px 18px 0;
+    font-size: 26px; */
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 0px;
+    top: 50%;
+    margin-top: -18px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+}
+
+.nexts {
+    text-align: center;
+    /* width: 35px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 18px 0 0 18px; */
+    position: absolute;
+    background-color: rgba(30, 30, 30, 0.2);
+    right: 0px;
+    top: 50%;
+    margin-top: -18px;
+    /* font-size: 26px; */
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+}
+
+.prev:hover {
+    background-color: rgba(30, 30, 30, 0.5);
+}
+
+.next:hover {
+    background-color: rgba(30, 30, 30, 0.5);
+}
+
+
+/* 搜索区 */
+
+#search {
+    height: 120px;
+}
+
+
+/* 商品主要区 */
+
+#main {
+    height: 490px;
+    margin-bottom: 20px;
+}
+
+
+/* 每日必抢 */
+
+#seckill {
+    height: 250px;
+    margin-bottom: 40px;
+}
+
+
+/* 优惠券 */
+
+#charge {
+    height: 425px;
+}
+
+#guess {
+    height: 302px;
+}
+
+#floor .common_floor {
+    margin-top: 32px;
+    height: 511px;
+}

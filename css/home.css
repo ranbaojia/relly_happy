@@ -1,0 +1,60 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+button,
+textarea,
+input,
+select {
+    font: 12px/1.5 arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+}

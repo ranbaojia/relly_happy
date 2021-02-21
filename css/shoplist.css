@@ -1,0 +1,202 @@
+body {
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+}
+
+.wrap {
+    margin: 15px auto;
+    width: 820px;
+}
+
+.wrap .head_nav {
+    width: 800px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #eee;
+    padding: 0 10px;
+}
+
+.head_nav span {
+    color: #555;
+    font-size: 14px;
+}
+
+.head_nav .he_title {
+    margin: 0 0 0 150px;
+}
+
+.head_nav .he_price {
+    margin: 0 0 0 165px;
+}
+
+.head_nav .he_num {
+    margin: 0 0 0 80px;
+}
+
+.head_nav .he_all {
+    margin: 0 0 0 80px;
+}
+
+.head_nav .he_op {
+    margin: 0 0 0 85px;
+}
+
+.wrap .wrap_list {
+    width: 820px;
+    overflow: hidden;
+}
+
+.wrap_list li {
+    width: 800px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #eee;
+    padding: 0 10px;
+    margin: 10px 0;
+    border-top: 3px solid #AAAAAA;
+}
+
+.wrap_list li .border {
+    width: 840px;
+    height: 10px;
+    background-color: #fff;
+    margin-left: -10px;
+}
+
+.wrap_list li a {
+    position: relative;
+    display: inline-block;
+}
+
+.wrap_list li img {
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+}
+
+.wrap_list .title {
+    display: inline-block;
+    width: 260px;
+    height: 20px;
+    line-height: 25px;
+    margin: 0 10px;
+}
+
+.wrap_list .sin_price {
+    margin: 0 0 0 18px;
+    color: #ff2200;
+}
+
+.wrap_list .num_wrap {
+    display: inline-block;
+    margin: 0 0 0 40px;
+    user-select: none;
+}
+
+.wrap_list .num_wrap .plus {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+}
+
+.wrap_list .num_wrap .minus {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+}
+
+.wrap_list .num {
+    margin: 0 5px;
+    width: 35px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    outline: none;
+    color: #ff2200;
+}
+
+.wrap_list .all_price {
+    display: inline-block;
+    margin: 0 0 0 50px;
+    width: 50px;
+    color: #ff2200;
+}
+
+.wrap_list .del {
+    margin: 0 0 0 57px;
+    cursor: pointer;
+}
+
+.wrap_list .del:hover {
+    color: #ff2200;
+    text-decoration: underline;
+}
+
+.wrap_list .warn {
+    display: inline-block;
+    font-size: 20px;
+    color: #ff2200;
+    margin: 20px 250px;
+}
+
+
+/* 结算界面 */
+
+.wrap .account {
+    height: 54px;
+    line-height: 54px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+.account input,
+.account span {
+    float: left;
+    cursor: pointer;
+    margin: 0 5px;
+    color: #666;
+}
+
+.account span:hover {
+    color: #ff2200;
+}
+
+.account input {
+    margin-top: 22px;
+    margin-left: 5px;
+}
+
+.account .del_chose {
+    margin: 0 10px;
+}
+
+.account .operator {
+    width: 220px;
+    height: 54px;
+    float: right;
+}
+
+.account .operator .go_account {
+    width: 94px;
+    height: 52px;
+    line-height: 52px;
+    background-color: #e64347;
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+}

@@ -1,0 +1,233 @@
+    #header {
+        height: 120px;
+        background-color: #fff;
+    }
+    
+    #login_bar {
+        height: 512px;
+        background: url(../images/login_banner.jpg) no-repeat center;
+        background-size: 100%;
+        border-top: 1px solid #f8e6c0;
+        text-align: center;
+    }
+    
+    #login_bar .container {
+        position: relative;
+        width: 1200px;
+        height: 100%;
+    }
+    
+    #login_bar .login_advice {
+        position: absolute;
+        color: #838383;
+        top: -23px;
+        right: 100px;
+    }
+    
+    #login_bar .login_warn {
+        height: 32px;
+        line-height: 32px;
+        color: #d5854a;
+    }
+    
+    #login_bar .login_warn span {
+        color: #526ca7;
+    }
+    
+    #login_bar .login_area {
+        position: absolute;
+        width: 350px;
+        min-height: 370px;
+        _height: 370px;
+        background-color: #fff;
+        right: 102px;
+        top: 54px;
+    }
+    
+    .login_area .area_title {
+        height: 54px;
+        width: 100%;
+        border-bottom: 1px solid #f4f4f4;
+        position: relative;
+        cursor: pointer;
+        color: #333;
+    }
+    /*tab选项卡*/
+    
+    .login_area .area_title .on {
+        color: #d91a12;
+    }
+    
+    .login_area .area_code .second_code {
+        float: left;
+        width: 148px;
+        height: 148px;
+        background-color: #eee;
+        margin: 33px 0 25px 102px;
+    }
+    
+    .login_area .area_code .second_code img {
+        float: left;
+        width: 148px;
+        height: 148px;
+    }
+    
+    .login_area .area_content .open_phone {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+    
+    .login_area .area_content .open_text {
+        width: 90px;
+        height: 19px;
+        line-height: 19px;
+        display: inline-block;
+        color: #666;
+        cursor: pointer;
+    }
+    
+    .login_area .area_content .open_phone .open_happy {
+        color: #d26e6e;
+    }
+    
+    .login_area .area_footer {
+        height: 48px;
+        line-height: 48px;
+        margin-left: 30px;
+        text-align: left;
+    }
+    
+    .login_area .area_footer span {
+        color: #5e5e5e;
+    }
+    
+    .login_area .area_footer i {
+        width: 1px;
+        height: 20px;
+        display: inline-block;
+        font-style: normal;
+        background: linear-gradient(to top, #fff, #333 30%, #333 65%, #fff);
+        margin: -5px 9px;
+    }
+    
+    .login_area .area_title .area_title_line::after {
+        content: '';
+        width: 1px;
+        height: 20px;
+        background-color: #eee;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -10px 0 0 0;
+    }
+    
+    .login_area .area_title span {
+        float: left;
+        width: 50%;
+        height: 54px;
+        line-height: 54px;
+        font-size: 17px;
+    }
+    
+    #login_footer {
+        height: 210px;
+        background: url(../images/login_footer.jpg) #fff no-repeat center;
+        cursor: pointer;
+    }
+    /* 登录输入框 */
+    
+    .login_area .area_content .input_area .input_error {
+        display: inline-block;
+        color: #E3111E;
+        width: 288px;
+        height: 20px;
+        line-height: 20px;
+        background-color: #FFEEEE;
+        text-align: left;
+        text-indent: 1rem;
+        display: none;
+    }
+    
+    .login_area .area_content .input_area {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .login_area .area_content .input_area input {
+        width: 288px;
+        height: 40px;
+        border: 1px solid #666;
+        outline: none;
+        color: #a5a5a5;
+        font-size: 14px;
+        text-indent: 1em;
+        margin: 10px 0;
+    }
+    /* 自动登录选择 */
+    
+    .login_area .area_content .area_chose {
+        height: 40px;
+        line-height: 40px;
+        margin-left: 30px;
+        color: #333;
+    }
+    
+    .login_area .area_content .area_chose input {
+        float: left;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+    
+    .login_area .area_content .area_chose span {
+        float: left;
+        cursor: pointer;
+    }
+    
+    .login_area .area_content .area_chose .chose_register {
+        float: left;
+        margin-left: 116px;
+    }
+    
+    .login_area .area_content .area_chose .chose_register .free_register {
+        color: #2875cc;
+    }
+    
+    .login_area .area_content .area_chose .chose_register i {
+        float: left;
+        margin: 16px 11px 0;
+        width: 2px;
+        height: 11px;
+        background-color: #aaa;
+    }
+    /* 登录按钮 */
+    
+    .login_area .login_button {
+        width: 290px;
+        height: 42px;
+        line-height: 42px;
+        background-color: #ff5757;
+        text-align: center;
+        margin-left: 30px;
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 32px;
+        box-sizing: content-box;
+        outline: none;
+        border: none;
+        display: block;
+        cursor: pointer;
+    }
+    /* 快速登录 */
+    
+    .login_area .quick_login {
+        color: #2875cc;
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 18px;
+    }
+    
+    .login_border {
+        border-top: 1px solid #f8e6c0;
+        border-bottom: 1px solid #f8e6c0;
+    }

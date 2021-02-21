@@ -1,0 +1,394 @@
+body {
+  background-color: #f9f9f9;
+}
+.location {
+  background: linear-gradient(to top, #fff 0%, #ebebeb 90%, #ccc);
+  border-bottom: 1px solid #ccc;
+}
+.location .location-con {
+  height: 48px;
+  color: #000000;
+  line-height: 48px;
+}
+.location .location-con span:nth-child(2),
+.location .location-con span:nth-child(4) {
+  cursor: pointer;
+}
+.location .location-con span:nth-child(2):hover,
+.location .location-con span:nth-child(4):hover {
+  color: red;
+}
+.P-item .P-item-con {
+  height: 680px;
+}
+.P-item .P-item-con .P-item-left {
+  position: relative;
+  width: 512px;
+  float: left;
+}
+.P-item .P-item-con .P-item-left .amplify {
+  display: block;
+  overflow: hidden;
+  background-color: lavender;
+  position: absolute;
+  z-index: 100;
+  left: 515px;
+  top: 25px;
+  width: 512px;
+  height: 512px;
+  border: 1px solid #ddd;
+}
+.P-item .P-item-con .P-item-left .amplify .superImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1020px;
+  height: 1020px;
+}
+.P-item .P-item-con .P-item-left .item-top {
+  position: relative;
+  width: 512px;
+  height: 512px;
+  border: 1px solid #ddd;
+  margin-top: 25px;
+  cursor: move;
+}
+.P-item .P-item-con .P-item-left .item-top .small .bigImg {
+  width: 510px;
+  height: 510px;
+}
+.P-item .P-item-con .P-item-left .item-top .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  width: 206px;
+  height: 206px;
+  background-color: #F8B600;
+  opacity: 0.4;
+}
+.P-item .P-item-con .P-item-left .item-bottom {
+  width: 516px;
+  height: 86px;
+  margin-top: 10px;
+}
+.P-item .P-item-con .P-item-left .item-bottom p {
+  float: left;
+  width: 16px;
+  height: 86px;
+  cursor: pointer;
+}
+.P-item .P-item-con .P-item-left .item-bottom p:nth-of-type(1) {
+  background: url(../image/pro-ditem-pre_03.jpg) center center no-repeat;
+}
+.P-item .P-item-con .P-item-left .item-bottom p:nth-of-type(2) {
+  background: url(../image/pro-ditem-next_03.jpg) center center no-repeat;
+}
+.P-item .P-item-con .P-item-left .item-bottom .prevSmall {
+  float: right;
+}
+.P-item .P-item-con .P-item-left .item-bottom div {
+  float: left;
+  width: 480px;
+  height: 86px;
+  overflow: hidden;
+}
+.P-item .P-item-con .P-item-left .item-bottom div ul {
+  width: 900px;
+}
+.P-item .P-item-con .P-item-left .item-bottom div ul img {
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  border: 1px solid #ddd;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.P-item .P-item-con .P-item-left .item-bottom div .light {
+  border: 1px solid #ff062b;
+}
+.P-item .P-item-con .P-item-right {
+  float: right;
+  width: 650px;
+  height: 670px;
+}
+.P-item .P-item-con .P-item-right .inf-top {
+  width: 100%;
+  margin-top: 20px;
+}
+.P-item .P-item-con .P-item-right .inf-top > p {
+  position: relative;
+  line-height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+.P-item .P-item-con .P-item-right .inf-top > p span {
+  background-color: #f1f1f1;
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  width: 68px;
+  height: 22px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+}
+.P-item .P-item-con .P-item-right .inf-top h5 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  line-height: 65px;
+  font-size: 24px;
+  font-weight: 600;
+  color: red;
+}
+.P-item .P-item-con .P-item-right .inf-top .send {
+  height: 181px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.P-item .P-item-con .P-item-right .inf-top .send p {
+  font-size: 14px;
+  height: 60px;
+  line-height: 60px;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-inf {
+  width: 100%;
+  height: 138px;
+  line-height: 138px;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-inf > div {
+  float: right;
+  width: 170px;
+  height: 36px;
+  border: 1px solid #ddd;
+  margin-top: 50px;
+  margin-right: 400px;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-inf > div .sub {
+  float: left;
+  width: 27%;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  background: url(../image/subtract-icon.jpg) center center no-repeat;
+  cursor: pointer;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-inf > div .plus {
+  float: right;
+  width: 27%;
+  height: 100%;
+  border-left: 1px solid #ddd;
+  background: url(../image/add-icon.png) center center no-repeat;
+  cursor: pointer;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-inf > div .number {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  overflow: hidden;
+  text-align: center;
+  outline: none;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-collect {
+  height: 42px;
+  width: 100%;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-collect .buy-now {
+  background-color: red;
+  float: left;
+  width: 180px;
+  height: 42px;
+  border: 1px solid red;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-collect .shopping-car {
+  background-color: #fff;
+  float: left;
+  width: 180px;
+  height: 42px;
+  border: 1px solid #ddd;
+  margin-left: 20px;
+  color: #666;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-collect .shopping-car:hover {
+  border: 1px solid red;
+  color: red;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-collect > div:last-child {
+  float: left;
+  position: relative;
+  height: 42px;
+  width: 150px;
+  margin-left: 20px;
+  line-height: 42px;
+  text-indent: 20px;
+  background: url(../image/ewmicon_20200825_2.png) left center no-repeat;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-collect > div:last-child:hover img {
+  display: block;
+}
+.P-item .P-item-con .P-item-right .inf-top .buy-collect > div:last-child img {
+  position: absolute;
+  display: none;
+  left: 0;
+  bottom: 42px;
+}
+.P-item .P-item-con .P-item-right .inf-top option {
+  outline: none;
+  border: none;
+}
+.P-item .P-item-con .P-item-right .inf-bottom {
+  margin-top: 30px;
+}
+.P-item .P-item-con .P-item-right .inf-bottom div {
+  float: left;
+  cursor: pointer;
+}
+.P-item .P-item-con .P-item-right .inf-bottom div:nth-child(1) {
+  padding: 0 20px;
+  background: url(../image/pro-ditem-kf_03.jpg) left center no-repeat;
+}
+.P-item .P-item-con .P-item-right .inf-bottom div:nth-child(2) {
+  padding: 0 20px;
+  background: url(../image/pro-ditem-like_03.jpg) left center no-repeat;
+}
+.P-item .P-item-con .P-item-right .inf-bottom div:nth-child(3) {
+  padding: 0 20px;
+  background: url(../image/pro-ditem-share_03.jpg) left center no-repeat;
+}
+.P-item .P-item-con .P-item-right .inf-bottom div:nth-child(4) {
+  width: 200px;
+  height: 22px;
+}
+.P-item .P-item-con .P-item-right .inf-bottom div:nth-child(4) img {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 3px 3px 0;
+  cursor: pointer;
+}
+.product-feature {
+  height: 62px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.product-feature > li {
+  float: left;
+}
+.product-feature > li:nth-child(odd) {
+  padding: 0 11px;
+  line-height: 60px;
+  margin: 0 30px;
+  cursor: pointer;
+}
+.product-feature > li:nth-child(odd):first-child {
+  border-bottom: 2px solid red;
+}
+.product-feature > li:nth-child(even) {
+  background-color: #ddd;
+  width: 1px;
+  height: 24px;
+  margin-top: 18px;
+}
+.big-pic {
+  margin: 20px auto;
+  min-height: 1400px;
+}
+.big-pic img {
+  width: 1200px;
+}
+.evaluation {
+  height: 44px;
+  border: 1px solid #ddd;
+}
+.evaluation li:nth-child(odd) {
+  float: left;
+  font-size: 13px;
+  padding: 0 20px;
+  line-height: 42px;
+}
+.evaluation li:nth-child(even) {
+  float: left;
+  width: 1px;
+  height: 14px;
+  background-color: #cfcfcf;
+  margin-top: 14px;
+}
+.evaluation li:nth-child(1) {
+  color: red;
+}
+.evaluation-d {
+  min-height: 300px;
+}
+.evaluation-d p {
+  color: #666;
+  text-align: center;
+  margin: 100px auto;
+}
+.recommend-con {
+  overflow: hidden;
+}
+.recommend-con .recommend-title {
+  height: 14px;
+  font-size: 14px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-indent: 10px;
+}
+.recommend-con .recommend-title span {
+  float: left;
+}
+.recommend-con .recommend-title span:nth-child(1) {
+  color: red;
+  cursor: pointer;
+}
+.recommend-con .recommend-title span:nth-child(2) {
+  width: 1px;
+  height: 20px;
+  margin: 0 20px;
+  border: 1px solid #ddd;
+}
+.recommend-con .recommend-title span:nth-child(3) {
+  cursor: pointer;
+}
+.recommend-con .recommend-show {
+  float: left;
+  height: 300px;
+}
+.recommend-con .recommend-show .recommend-details {
+  float: left;
+  width: 240px;
+  height: 300px;
+  margin-right: 14px;
+  background-color: #fff;
+}
+.recommend-con .recommend-show .recommend-details img {
+  width: 190px;
+  height: 190px;
+  margin: 10px auto;
+}
+.recommend-con .recommend-show .recommend-details h4 {
+  width: 200px;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.recommend-con .recommend-show .recommend-details h4:hover {
+  color: red;
+}
+.recommend-con .recommend-show .recommend-details h5 {
+  width: 200px;
+  margin: 30px auto;
+  color: red;
+}

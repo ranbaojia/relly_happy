@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车列表</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./addfont/iconfont.css">
+
+    <link rel="stylesheet" href="./css/shoplist.css">
+    <script src="./js/jquery-1.8.3.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="wrap">
+        <div class="head_nav">
+            <input class="allchose" type="checkbox">
+            <span>全选</span>
+            <span class="he_title">商品
+            </span>
+            <span class="he_price">单价</span>
+            <span class="he_num">数量</span>
+            <span class="he_all">总价</span>
+            <span class="he_op">操作</span>
+        </div>
+        <ul class="wrap_list clearfix">
+            <!-- <li class="clearfix">
+                <input type="checkbox">
+                <a href=""><img src="${item.imgurl}" alt=""></a>
+                <span class="title">${item.title}</span>
+                <span class="sin_price" >${item.price}</span>
+                <div class="num_wrap"> <span class="iconfont plus">&#xe6aa;</span>
+                <input type="text" class="num" data-id="${item.id}" value="${obj.num}"><span class="iconfont minus">&#xe6a9;</span>
+                </div>
+                 <span class="all_price">¥<span>${item.price*obj.num}</span></span>
+                <span class="del" >删除</span>
+                </li> -->
+            <!-- <span class="warn">亲！您还没有添加商品，再看看吧！</span> -->
+        </ul>
+        <div class="account">
+            <input class="allchose" type="checkbox"><span>全选</span>
+            <span class="del_chose">删除选中商品</span>
+            <span class="has_chose">已选<span span style="color:#ff2200;float:none">0</span>件商品</span>
+            <div class="operator">
+                <span class="sum_chose">结算总价：<span></span></span>
+                <span class="go_account">去结算</span>
+            </div>
+        </div>
+
+    </div>
+    <!-- <script src="./js/index.js"></script> -->
+</body>
+<script src="./js/mePublic.js"></script>
+<script src="./js/shoplist.js"></script>
+
+
+</html>
