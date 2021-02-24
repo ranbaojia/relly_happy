@@ -420,9 +420,9 @@ var EventUtil = {
     // 版本二
     // 封装绑定事件处理函数和移除事件处理函数
 var Event = {
-    addEvent: function(dom, type, callBack, bol) {
+    addEvent: function(dom, type, callBack) {
         if (window.addEventListener) {
-            dom.addEventListener(type, callBack, bol)
+            dom.addEventListener(type, callBack, false)
         } else if (window.attachEvent) {
             dom.attachEvent("on" + type, function() {
                 callBack.call(dom);
@@ -467,8 +467,8 @@ function onTarget(parent, type, selector, callback) {
                 selector_last = selector.toUpperCase();
         }
         if (target[selector_type] == selector_last) {
-
-            callback.call(target, e)
+            // 给事件源增加一个属性，判断其所在类数组的索引
+            callback.call(target, e);
         }
     })
 }

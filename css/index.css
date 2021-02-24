@@ -603,16 +603,37 @@
   color: #fff;
   font-size: 13px;
 }
-.main_left .cla_show .cla_second div {
-  font-size: 300px;
+.main_left .cla_show .cla_second .num {
+  font-size: 100px;
   font-weight: 900;
   color: #c81623;
   width: 200px;
   text-align: center;
-  margin: 50px auto;
+  margin: 5px auto;
 }
 .main_left .cla_show .cla_second .cla_third li:hover {
   background-color: #c81623;
+  color: #000;
+}
+.main_left .cla_show .cla_second .shopping_list {
+  width: 700px;
+}
+.main_left .cla_show .cla_second .shopping_list {
+  width: 700px;
+  margin-top: 30px;
+}
+.main_left .cla_show .cla_second .shopping_list li {
+  float: left;
+  width: 25%;
+  text-align: left;
+}
+.main_left .cla_show .cla_second .shopping_list li a {
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+}
+.main_left .cla_show .cla_second .shopping_list li a:hover {
+  color: #b30fd2;
 }
 #main .main_container .main_right {
   float: right;
@@ -955,6 +976,16 @@
 #charge .charge_day .charge_left .charge_wrap .charge_bar ul li .charge_price {
   color: #ef0930;
   font-size: 19px;
+}
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li .charge_price a {
+  width: 164px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li .charge_price a:hover {
+  color: #b30fd2;
 }
 #charge .charge_day .charge_left .charge_wrap .prevs {
   position: absolute;
