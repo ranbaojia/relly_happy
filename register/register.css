@@ -1,0 +1,88 @@
+#content {
+  min-height: 510px;
+  _height: 510px;
+}
+#content .wrap {
+  width: 410px;
+  height: 370px;
+  margin: 0 auto;
+  margin-top: 80px;
+  position: relative;
+}
+#content .wrap .num {
+  display: flex;
+  justify-content: space-between;
+  width: 410px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#content .wrap .num span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #666;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 18px;
+}
+#content .wrap .num span:nth-of-type(2) {
+  margin-left: 150px;
+}
+#content .wrap .num span:nth-of-type(3) {
+  margin-left: 150px;
+}
+#content .wrap .register_wrap {
+  position: relative;
+}
+#content .wrap .register_wrap .register {
+  width: 300px;
+  margin: 0 auto ;
+}
+#content .wrap .register_wrap .register input {
+  width: 299px;
+  border: 1px solid #ccc;
+  outline: none;
+  height: 44px;
+  margin-bottom: 30px;
+  text-indent: 1rem;
+}
+#content .wrap .register_wrap .next {
+  width: 300px;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#content .wrap .register_wrap .next button {
+  width: 300px;
+  height: 45px;
+  outline: none;
+  border: none;
+  background-color: #ff4d4d;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+#content .wrap .success {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 410px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+  margin: 0 auto;
+  display: none;
+}
+#content .wrap .success span {
+  color: #ff4d4d;
+  font-size: 35px;
+}
+#content .wrap .success span a {
+  color: #007ACC;
+  font-size: 35px;
+  text-decoration: underline;
+}

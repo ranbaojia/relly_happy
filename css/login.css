@@ -140,12 +140,12 @@
     .login_area .area_content .input_area .input_error {
         display: inline-block;
         color: #E3111E;
-        width: 288px;
+        width: 350px;
         height: 20px;
         line-height: 20px;
         background-color: #FFEEEE;
         text-align: left;
-        text-indent: 1rem;
+        text-indent: 2rem;
         display: none;
     }
     

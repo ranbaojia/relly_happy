@@ -4,13 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>京东登录</title>
+    <title>真快乐登录</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/jquery-1.8.3.js"></script>
+    <script src="./js/mePublic.js"></script>
 </head>
 
 <body>
+    <div id="head">
+        <script>
+            var $head = $('#head');
+            $head.load('./sub_html/head.html')
+        </script>
+    </div>
     <div id="header"></div>
     <div id="login_bar">
         <div class="container">
@@ -36,7 +45,7 @@
                     <!-- 登录输入框 -->
                     <form action="" class="area_content clearfix">
                         <div class="input_area">
-                            <span class="input_error">密码和账户不匹配,请重新输入</span>
+                            <span class="input_error">密码和账户不匹配,请重新输入或注册</span>
                             <input class="input_user" type="text" placeholder="手机号码/用户名/邮箱/门店会员卡号">
                             <input class="input_pass" type="password" placeholder="密码">
                         </div>
@@ -45,7 +54,7 @@
                             <input class="auto_login" type="checkbox"><span>自动登录</span>
                             <div class="chose_register">
                                 <span>忘记密码</span><i></i>
-                                <span class="free_register">免费注册</span>
+                                <a href="./register.html" class="free_register">免费注册</a>
                             </div>
                         </div>
 
@@ -68,11 +77,10 @@
         <div id="login_footer"></div>
 </body>
 
-<script src="./js/jquery-1.8.3.js"></script>
-<script src="./js/mePublic.js"></script>
+
 <script>
     var $header = $('#header') //服务器环境运行
-    $header.load('./common_login.html');
+    $header.load('./sub_html/login_head.html');
 </script>
 <script src="./js/login.js"></script>
 

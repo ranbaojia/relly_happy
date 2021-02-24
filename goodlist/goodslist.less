@@ -11,9 +11,7 @@ body {
   position: relative;
   // overflow: hidden;
   background-color: #111;
-  width: 1226px;
   height: 0px;
-  margin: 0 auto;
   cursor: pointer;
 
   &>p {
@@ -100,8 +98,6 @@ body {
           height: 60px;
           margin-right: 10px;
         }
-
-
         a {
           font-size: 16px;
           color: #333;
@@ -127,9 +123,6 @@ body {
         }
 
         //启客系列
-
-
-
       }
 
     }
@@ -143,12 +136,10 @@ body {
   background: #f3f3f3;
 
   .location-con {
-    width: 1226px;
     height: 48px;
-    margin: 0 auto;
     color: #000000;
     line-height: 48px;
-
+    padding-left: 6px;
     span:nth-child(2),
     span:nth-child(4) {
       cursor: pointer;
@@ -166,8 +157,6 @@ body {
   margin-bottom: 100px;
 
   .screen-con {
-    width: 1226px;
-    margin: 0 auto;
 
     //全部结果
     h4 {
@@ -306,9 +295,7 @@ body {
 //筛选二
 .screen2-con {
 
-  width: 1226px;
   height: 48px;
-  margin: 0 auto;
 
   // 筛选二左侧
   h4 {
@@ -404,8 +391,6 @@ body {
 
 //产品展示内容部分
 .product-show-con {
-  width: 1226px;
-  margin: 0 auto;
   overflow: hidden;
 
   // 产品展示框
@@ -431,16 +416,27 @@ body {
       img {
         width: 190px;
         height: 190px;
-        margin: 15px auto;
+        margin: 10px auto;
       }
 
-      h4 {
-        width: 220px;
+      .title {
+        display: block;
+        width: 190px;
         margin: 0 auto;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
         text-align: center;
+        white-space: nowrap;
         color: #000;
+        text-indent:20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .title_warn{
+        display: block;
+        height: 20px;
+        line-height: 20px   ;
       }
 
       // 评价和价格
@@ -505,17 +501,31 @@ body {
 
           // 加入购物车
           &:nth-of-type(3) {
+            padding: 0;
             width: 40%;
             height: 32px;
+            line-height: 32px;
             color: red;
-            text-indent: 14px;
             cursor: pointer;
-            background: url(../image/pro-goods-cars-icon_13.jpg) 5px center no-repeat;
-
-            &:hover {
-              border: 1px solid red;
-
+            border:1px solid red;
+            background-color: #fff;
+            user-select: none;
+            span{
+              &::before{
+                content: "\e61e";
+                // float: left;
+                display: inline-block;
+                font-size: 14px;
+                text-align: center;
+                width: 14px;
+                height: 32px;
+              }
             }
+            &:hover {
+              background-color: red;
+              color: #fff;
+            }
+           
           }
         }
 
@@ -528,8 +538,6 @@ body {
 // 翻页
 .next-con {
   overflow: hidden;
-  width: 1226px;
-  margin: 30px auto;
 
   .next-rigth {
     background-color: #fff;
@@ -563,8 +571,6 @@ body {
 //为您推荐
 .recommend-con {
   overflow: hidden;
-  width: 1226px;
-  margin: 0 auto;
 
   .recommend-right {
     float: right;

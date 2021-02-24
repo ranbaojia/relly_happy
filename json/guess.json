@@ -1,8 +1,19 @@
-[
-    { "imgUrl": "./images/guess1.jpg", "price": "1980.00", "title": "美的(midea)加热破壁营养料理机 MJ-PB40E254D大功率高" },
-    { "imgUrl": "./images/guess2.jpg", "price": "2200.00", "title": "海尔(Haier) XQB80-M17088公斤波轮洗衣机钢业破碎兰" },
-    { "imgUrl": "./images/guess3.jpg", "price": "3000.00", "title": "海尔(Haier)JSQ30-16RM1BWU1零冷水" },
-    { "imgUrl": "./images/guess4.jpg", "price": "599.00", "title": "联想(Lenovo小新Air14 2020英特尔酷睿i514英寸全面屏轻蒲" },
-    { "imgUrl": "./images/guess5.jpg", "price": "999.00", "title": "苹果Apple iPad平板电脑2020年新款10.2英寸(2020款金色)" },
-    { "imgUrl": "./images/guess6.jpg", "price": "888.00", "title": "美的(Midea)电饭煲微电脑版智能预约拉丝不锈钢机身4L电" }
-]
+[{
+    "detail": [{ "imgUrl": "./images/guess1.jpg", "price": "1980.00", "title": "美的(midea)加热破壁营养料理机 MJ-PB40E254D大功率高" },
+        { "imgUrl": "./images/guess2.jpg", "price": "2200.00", "title": "海尔(Haier) XQB80-M17088公斤波轮洗衣机钢业破碎兰" },
+        { "imgUrl": "./images/guess3.jpg", "price": "3000.00", "title": "海尔(Haier)JSQ30-16RM1BWU1零冷水" },
+        { "imgUrl": "./images/guess4.jpg", "price": "599.00", "title": "联想(Lenovo小新Air14 2020英特尔酷睿i514英寸全面屏轻蒲" },
+        { "imgUrl": "./images/guess5.jpg", "price": "999.00", "title": "苹果Apple iPad平板电脑2020年新款10.2英寸(2020款金色)" },
+        { "imgUrl": "./images/guess6.jpg", "price": "888.00", "title": "美的(Midea)电饭煲微电脑版智能预约拉丝不锈钢机身4L电" }
+    ],
+    "charge": [{ "imgUrl": "./images/time1.jpg", "price": "1980.00", "title": "小米(MI)MES601米家电动牙刷" },
+        { "imgUrl": "./images/time2.jpg", "price": "5999.00", "title": "朵萃精油修养润手霜〔(薰衣草30g+玫" },
+        { "imgUrl": "./images/time3.jpg", "price": "3000.00", "title": "海尔(Haier)JSQ30-16RM1BWU1零冷水" },
+        { "imgUrl": "./images/time4.jpg", "price": "1800.00", "title": "亲心台湾地道肠500g*4不添加淀" },
+        { "imgUrl": "./images/time5.jpg", "price": "1599.00", "title": "小米圈厨多功能家用蒸煮炒煎料理锅" },
+        { "imgUrl": "./images/time6.jpg", "price": "888.00", "title": "格兰仕破壁料理机" },
+        { "imgUrl": "./images/time7.jpg", "price": "599.00", "title": "小米圈厨多功能家用蒸煮炒煎料理锅" },
+        { "imgUrl": "./images/time8.jpg", "price": "2233.00", "title": "朵萃精油修养润手霜〔(薰衣草30g+玫" }
+
+    ]
+}]

@@ -414,8 +414,6 @@
         float: left;
         height: 120px; 
         line-height: 120px;
-
-        
         a{
             // 行内块级元素想居中，设置成行内块后要用verticl-align:middle,且父级line-height和height等高
             display: inline-block;
@@ -486,8 +484,6 @@
         }
 
     }
-    
- 
     .search_nav{
         width: 502px;
         margin: 0 auto;
@@ -725,22 +721,50 @@
     margin-right: 10px;
     color: #fff;
     font-size: 13px;
+    font-weight: bold;
 }
 
-.main_left .cla_show .cla_second div {
-    font-size: 300px;
+.main_left .cla_show .cla_second .num {
+    font-size: 100px;
     font-weight: 900;
     color: #c81623;
     width: 200px;
     text-align: center;
-    margin: 50px auto;
+    margin: 5px auto;
 }
 
 .main_left .cla_show .cla_second .cla_third li:hover {
     background-color: #c81623;
+    color: @c;
 }
 
-
+.main_left .cla_show .cla_second .shopping_list{
+     width: 700px;
+}
+.main_left{
+    .cla_show{
+        .cla_second{
+           .shopping_list{
+               width: 700px;
+               margin-top:30px;
+               li{
+                   float: left;
+                   width: 25%;
+                   text-align: left;
+                   a{
+                    color:#333;
+                    font-size: 12px;
+                    font-weight:bold;
+                   }
+                   &:hover{
+                    a{
+                        color:@c;
+                   }
+               }
+           }
+        }
+    }
+}
 #main{
     .main_container{
         .main_right{
@@ -1123,6 +1147,17 @@
                             .charge_price{
                                 color:#ef0930;
                                 font-size:19px;
+                                a{
+                                width: 164px;
+                                text-align: left;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                &:hover{
+                                 color: @c;
+                                }
+                                }
+                                
                             }
                          }
                     }
@@ -1703,3 +1738,4 @@
 }}
 
 
+}

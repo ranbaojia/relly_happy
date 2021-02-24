@@ -2,424 +2,407 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>长虹列表页</title>
-  <!-- 图标引入 -->
-  <link rel="shortcut icon" href="./image/favicon.ico">
-  <!-- 重置样式引入 -->
-  <link rel="stylesheet" href="./style/reset.css">
-  <!-- 列表页样式引入 -->
-  <link rel="stylesheet" href="./style/goodslist.css">
-  <!-- jquery引入 -->
-  <script src="../script/jquery.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>真快乐列表页</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./goodlist/reset.css">
+    <link rel="stylesheet" href="./goodlist/goodslist.css">
+    <script src="./js/jquery-1.8.3.js"></script>
 </head>
 
 <body>
-  <!-- 头部公共样式 -->
-  <div class="headerpage">
-    <script> $(".headerpage").load("./header.html");</script>
-  </div>
-
-
-  <!-- 中间部分 -->
-  <div class="content">
-    <!-- 头部的列表按钮 -->
-    <div class="select">
-      <p class="select-btn"></p>
-      <ul class="home-menu">
-        <!-- 启客系列 -->
-        <li>
-          <a href=""> <img src="../image/inner-chiq-icon.png" alt=""> 启客系列</a>
-          <!-- 展示部分 -->
-          <div class="home-menu-qkxl" style="display: none;">
-            <!-- 启客系列电视 -->
-            <div>
-              <a href="">
-                <img src="./image/W020201110582487305011_160.jpg" alt="">
-                CHiQ电视
-              </a>
-              <p>
-                <a href="">Q5R</a>
-                <a href="">Q5R</a>
-                <a href="">Q5R</a>
-                <a href="">Q5R</a>
-                <a href="">Q5R</a>
-                <a href="">Q5R</a>
-                <a href="">Q5R</a>
-                <a href="">Q5R</a>
-                <a href="">Q5R</a>
-                <a href="">Q5R</a>
-                <a href="">Q5R</a>
-              </p>
-            </div>
-            <!-- 启客系列空调 -->
-            <div>
-              <a href="">
-                <img src="./image/W020201030493498845086_135.jpg" alt="">
-                CHiQ空调
-              </a>
-              <p>
-                <a href="">立式</a>
-                <a href="">壁挂式</a>
-              </p>
-            </div>
-            <!-- 启客系列冰箱 -->
-            <div>
-              <a href="">
-                <img src="./image/W020201202602912125564_160.jpg" alt="">
-                CHiQ冰箱
-              </a>
-              <p>
-                <a href="">对开门</a>
-              </p>
-            </div>
-
-          </div>
-        </li>
-        <!-- 电视 -->
-        <li>
-          <a href=""> <img src="../image/inner-TV-icon.png" alt="">平板电视</a>
-          <div style="display: none;">平板电视</div>
-        </li>
-        <!-- 空调产品 -->
-        <li>
-          <a href=""> <img src="../image/inner-air-icon.png" alt="">空调产品</a>
-          <div style="display: none;">空调产品</div>
-        </li>
-        <!-- 冰洗产品 -->
-        <li>
-          <a href=""> <img src="../image/inner-icebox-icon.png" alt="">冰洗产品</a>
-          <div style="display: none;">冰洗产品</div>
-        </li>
-        <!-- 生活家电 -->
-        <li>
-          <a href=""> <img src="../image/inner-ele-icon.png" alt="">生活家电</a>
-          <div style="display: none;">生活家电</div>
-        </li>
-        <!-- 数码影音 -->
-        <li>
-          <a href=""> <img src="../image/inner-digital-icon.png" alt="">数码影音</a>
-          <div style="display: none;">数码影音</div>
-        </li>
-        <!-- 智慧家庭 -->
-        <li>
-          <a href=""> <img src="../image/inner-other-icon.png" alt="">智慧家庭</a>
-          <div style="display: none;">智慧家庭</div>
-        </li>
-        <!-- 功能箱包 -->
-        <li>
-          <a href=""> <img src="../image/inner-gnxb-icon.png" alt="">功能箱包</a>
-          <div style="display: none;">功能箱包</div>
-        </li>
-      </ul>
+    <!-- 头部公共样式 -->
+    <div id="head">
     </div>
-    <!-- 定位 -->
-    <div class="location">
-      <div class="location-con">
-        <span>当前位置：</span>
-        <span> 首页</span>
-        <span> ></span>
-        <span> 平板电视</span>
-      </div>
-    </div>
-    <!-- 筛选 -->
-    <div class="screen">
-      <div class="screen-con">
-        <h4>全部结果</h4>
-        <div class="screen-inner">
-          <h5>
-            <p>产品类型</p>
-            <i>全部</i>
-            <i>激光电视</i>
-            <i>激光电视</i>
-            <i>激光电视</i>
-            <i>激光电视</i>
-          </h5>
-          <h5>
-            <p>尺寸</p>
-            <i>全部</i>
-            <i>32英尺及以下</i>
-            <i>32英尺及以下</i>
-            <i>32英尺及以下</i>
-            <i>32英尺及以下</i>
-            <div class="distance">
-              <span> 建议观看距离</span>
-              <img src="../image/distance_03.jpg" alt="">
+    <!-- 中间部分 -->
+    <div class="content">
+        <!-- 头部的列表按钮 -->
+        <div class="select container">
+            <p class="select-btn"></p>
+            <ul class="home-menu">
+                <!-- 启客系列 -->
+                <li>
+                    <a href=""> <img src="./image/inner-chiq-icon.png" alt=""> 启客系列</a>
+                    <!-- 展示部分 -->
+                    <div class="home-menu-qkxl" style="display: none;">
+                        <!-- 启客系列电视 -->
+                        <div>
+                            <a href="">
+                                <img src="./image/W020201110582487305011_160.jpg" alt=""> CHiQ电视
+                            </a>
+                            <p>
+                                <a href="">Q5R</a>
+                                <a href="">Q5R</a>
+                                <a href="">Q5R</a>
+                                <a href="">Q5R</a>
+                                <a href="">Q5R</a>
+                                <a href="">Q5R</a>
+                                <a href="">Q5R</a>
+                                <a href="">Q5R</a>
+                                <a href="">Q5R</a>
+                                <a href="">Q5R</a>
+                                <a href="">Q5R</a>
+                            </p>
+                        </div>
+                        <!-- 启客系列空调 -->
+                        <div>
+                            <a href="">
+                                <img src="./image/W020201030493498845086_135.jpg" alt=""> CHiQ空调
+                            </a>
+                            <p>
+                                <a href="">立式</a>
+                                <a href="">壁挂式</a>
+                            </p>
+                        </div>
+                        <!-- 启客系列冰箱 -->
+                        <div>
+                            <a href="">
+                                <img src="./image/W020201202602912125564_160.jpg" alt=""> CHiQ冰箱
+                            </a>
+                            <p>
+                                <a href="">对开门</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+                <!-- 电视 -->
+                <li>
+                    <a href=""> <img src="./image/inner-TV-icon.png" alt="">平板电视</a>
+                    <div style="display: none;">平板电视</div>
+                </li>
+                <!-- 空调产品 -->
+                <li>
+                    <a href=""> <img src="./image/inner-air-icon.png" alt="">空调产品</a>
+                    <div style="display: none;">空调产品</div>
+                </li>
+                <!-- 冰洗产品 -->
+                <li>
+                    <a href=""> <img src="./image/inner-icebox-icon.png" alt="">冰洗产品</a>
+                    <div style="display: none;">冰洗产品</div>
+                </li>
+                <!-- 生活家电 -->
+                <li>
+                    <a href=""> <img src="./image/inner-ele-icon.png" alt="">生活家电</a>
+                    <div style="display: none;">生活家电</div>
+                </li>
+                <!-- 数码影音 -->
+                <li>
+                    <a href=""> <img src="./image/inner-digital-icon.png" alt="">数码影音</a>
+                    <div style="display: none;">数码影音</div>
+                </li>
+                <!-- 智慧家庭 -->
+                <li>
+                    <a href=""> <img src="./image/inner-other-icon.png" alt="">智慧家庭</a>
+                    <div style="display: none;">智慧家庭</div>
+                </li>
+                <!-- 功能箱包 -->
+                <li>
+                    <a href=""> <img src="./image/inner-gnxb-icon.png" alt="">功能箱包</a>
+                    <div style="display: none;">功能箱包</div>
+                </li>
+            </ul>
+        </div>
+        <!-- 定位 -->
+        <div class="location">
+            <div class="location-con container">
+                <span>当前位置：</span>
+                <span> 首页</span>
+                <span> ></span>
+                <span> 平板电视</span>
             </div>
-          </h5>
-          <h5>
-            <p>价格</p>
-            <i>全部</i>
-            <i>0-1499元</i>
-            <i>0-1499元</i>
-            <i>0-1499元</i>
-            <i>0-1499元</i>
-            <div>
-              <input type="text" name="" id="low">
-              <span>至</span>
-              <input type="text" name="" id="high">
-              <p>确认</>
-            </div>
-          </h5>
-          <h5>
-            <p>分辨率</p>
-            <i>全部</i>
-            <i>4k超清（3840*2160）</i>
-            <i>4k超清（3840*2160）</i>
-            <i>4k超清（3840*2160）</i>
-            <i>4k超清（3840*2160）</i>
-          </h5>
-          <h5>
-            <p>其他功能</p>
-            <select name="" id="">
+        </div>
+        <!-- 筛选 -->
+        <div class="screen">
+            <div class="screen-con container">
+                <h4>全部结果</h4>
+                <div class="screen-inner">
+                    <h5>
+                        <p>产品类型</p>
+                        <i>全部</i>
+                        <i>激光电视</i>
+                        <i>激光电视</i>
+                        <i>激光电视</i>
+                        <i>激光电视</i>
+                    </h5>
+                    <h5>
+                        <p>尺寸</p>
+                        <i>全部</i>
+                        <i>32英尺及以下</i>
+                        <i>32英尺及以下</i>
+                        <i>32英尺及以下</i>
+                        <i>32英尺及以下</i>
+                        <div class="distance">
+                            <span> 建议观看距离</span>
+                            <img src="./image/distance_03.jpg" alt="">
+                        </div>
+                    </h5>
+                    <h5>
+                        <p>价格</p>
+                        <i>全部</i>
+                        <i>0-1499元</i>
+                        <i>0-1499元</i>
+                        <i>0-1499元</i>
+                        <i>0-1499元</i>
+                        <div>
+                            <input type="text" name="" id="low">
+                            <span>至</span>
+                            <input type="text" name="" id="high">
+                            <p>确认
+                            </p>
+                        </div>
+                    </h5>
+                    <h5>
+                        <p>分辨率</p>
+                        <i>全部</i>
+                        <i>4k超清（3840*2160）</i>
+                        <i>4k超清（3840*2160）</i>
+                        <i>4k超清（3840*2160）</i>
+                        <i>4k超清（3840*2160）</i>
+                    </h5>
+                    <h5>
+                        <p>其他功能</p>
+                        <select name="" id="">
               <option value="">
                 能效等级
               </option>
             </select>
-            <select name="" id="">
+                        <select name="" id="">
               <option value="">
                 连接方式
               </option>
             </select>
-          </h5>
+                    </h5>
+                </div>
+                <div class="moreScreen">
+                    分辨率，产品特色等更多条件选择 ↓
+                </div>
+            </div>
         </div>
-        <div class="moreScreen">
-          分辨率，产品特色等更多条件选择 ↓
+        <!-- 筛选二（排序啥的） -->
+        <div class="screen2-con container">
+            <h4>帮您选择</h4>
+            <div>
+                <ul>
+                    <li>销量</li>
+                    <li>价格</li>
+                    <li>评价</li>
+                    <li>新品</li>
+                    <li>促销</li>
+                    <li>
+                        <input type="checkbox">
+                        <span> &nbsp;仅显示有货</span>
+                    </li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="在结果中搜索">
+                    <p></p>
+                </div>
+            </div>
         </div>
-      </div>
+        <!-- 产品展示窗口 -->
+        <div class="product-show-con container">
+            <div class="product-show-right">
+                <!-- <div class="product-detail">
+                    <img src="./image/W020201110582487305011_160.jpg" alt="">
+                    <h4>55D8R 55英寸远场语音杜比</h4>
+                    <div>
+                        <h5>¥3999.00</h5>
+                        <span>0人评价</span>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" name="" id=""> 对比
+                        </p>
+                        <p>
+                            收藏
+                        </p>
+                        <p class="iconfont">加入购物车</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./image/W020201110582487305011_160.jpg" alt="">
+                    <h4>55D8R 55英寸远场语音杜比</h4>
+                    <div>
+                        <h5>¥3999.00</h5>
+                        <span>0人评价</span>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" name="" id=""> 对比
+                        </p>
+                        <p>
+                            收藏
+                        </p>
+                        <p class="iconfont">加入购物车</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./image/W020201110582487305011_160.jpg" alt="">
+                    <h4>55D8R 55英寸远场语音杜比</h4>
+                    <div>
+                        <h5>¥3999.00</h5>
+                        <span>0人评价</span>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" name="" id=""> 对比
+                        </p>
+                        <p>
+                            收藏
+                        </p>
+                        <p class="iconfont">加入购物车</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./image/W020201110582487305011_160.jpg" alt="">
+                    <h4>55D8R 55英寸远场语音杜比</h4>
+                    <div>
+                        <h5>¥3999.00</h5>
+                        <span>0人评价</span>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" name="" id=""> 对比
+                        </p>
+                        <p>
+                            收藏
+                        </p>
+                        <p class="iconfont">加入购物车</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./image/W020201110582487305011_160.jpg" alt="">
+                    <h4>55D8R 55英寸远场语音杜比</h4>
+                    <div>
+                        <h5>¥3999.00</h5>
+                        <span>0人评价</span>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" name="" id=""> 对比
+                        </p>
+                        <p>
+                            收藏
+                        </p>
+                        <p class="iconfont">加入购物车</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./image/W020201110582487305011_160.jpg" alt="">
+                    <h4>55D8R 55英寸远场语音杜比</h4>
+                    <div>
+                        <h5>¥3999.00</h5>
+                        <span>0人评价</span>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" name="" id=""> 对比
+                        </p>
+                        <p>
+                            收藏
+                        </p>
+                        <p class="iconfont">加入购物车</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./image/W020201110582487305011_160.jpg" alt="">
+                    <h4>55D8R 55英寸远场语音杜比</h4>
+                    <div>
+                        <h5>¥3999.00</h5>
+                        <span>0人评价</span>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" name="" id=""> 对比
+                        </p>
+                        <p>
+                            收藏
+                        </p>
+                        <p class="iconfont">加入购物车</p>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <img src="./image/W020201110582487305011_160.jpg" alt="">
+                    <h4>55D8R 55英寸远场语音杜比</h4>
+                    <div>
+                        <h5>¥3999.00</h5>
+                        <span>0人评价</span>
+                    </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" name="" id=""> 对比
+                        </p>
+                        <p>
+                            收藏
+                        </p>
+                        <p class="iconfont">加入购物车</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- 翻页 -->
+        <div class="next-con container">
+            <div class="next-rigth">
+                <a href="">首页</a>
+                <a href="">＜</a>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">＞</a>
+                <a href="">尾页</a>
+            </div>
+        </div>
+        <!-- 为你推荐 -->
+        <div class="recommend-con container">
+            <div class="recommend-right">
+                <div class="recommend-title">
+                    <span>为您推荐</span>
+                    <span></span>
+                    <span>最近浏览</span>
+                </div>
+                <div class="recommend-show">
+                    <div class="recommend-details">
+                        <img src="./image/P020180723547366127006.jpg" alt="">
+                        <h4>CHiQ冰箱</h4>
+                        <h5>¥13997.00</h5>
+                    </div>
+                    <div class="recommend-details">
+                        <img src="./image/P020180723547366127006.jpg" alt="">
+                        <h4>CHiQ冰箱</h4>
+                        <h5>¥13997.00</h5>
+                    </div>
+                    <div class="recommend-details">
+                        <img src="./image/P020180723547366127006.jpg" alt="">
+                        <h4>CHiQ冰箱</h4>
+                        <h5>¥13997.00</h5>
+                    </div>
+                    <div class="recommend-details">
+                        <img src="./image/P020180723547366127006.jpg" alt="">
+                        <h4>CHiQ冰箱</h4>
+                        <h5>¥13997.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- 筛选二（排序啥的） -->
-    <div class="screen2-con">
-      <h4>帮您选择</h4>
-      <div>
-        <ul>
-          <li>销量</li>
-          <li>价格</li>
-          <li>评价</li>
-          <li>新品</li>
-          <li>促销</li>
-          <li>
-            <input type="checkbox">
-            <span> &nbsp;仅显示有货</span>
-          </li>
-        </ul>
-        <div class="search">
-          <input type="text" placeholder="在结果中搜索">
-          <p></p>
-        </div>
-      </div>
+    <!-- 帮助中心-->
+    <div id="help">
+
     </div>
-    <!-- 产品展示窗口 -->
-    <div class="product-show-con">
-      <div class="product-show-right">
-        <!-- <div class="product-detail">
-          <img src="./image/W020201110582487305011_160.jpg" alt="">
-          <h4>55D8R 55英寸远场语音杜比</h4>
-          <div>
-            <h5>￥3999.00</h5>
-            <span>0人评价</span>
-          </div>
-          <div>
-            <p>
-              <input type="checkbox" name="" id="">
-              对比
-            </p>
-            <p>
-              收藏
-            </p>
-            <p>加入购物车</p>
-          </div>
-        </div>
-        <div class="product-detail">
-          <img src="./image/W020201110582487305011_160.jpg" alt="">
-          <h4>55D8R 55英寸远场语音杜比</h4>
-          <div>
-            <h5>￥3999.00</h5>
-            <span>0人评价</span>
-          </div>
-          <div>
-            <p>
-              <input type="checkbox" name="" id="">
-              对比
-            </p>
-            <p>
-              收藏
-            </p>
-            <p>加入购物车</p>
-          </div>
-        </div>
-        <div class="product-detail">
-          <img src="./image/W020201110582487305011_160.jpg" alt="">
-          <h4>55D8R 55英寸远场语音杜比</h4>
-          <div>
-            <h5>￥3999.00</h5>
-            <span>0人评价</span>
-          </div>
-          <div>
-            <p>
-              <input type="checkbox" name="" id="">
-              对比
-            </p>
-            <p>
-              收藏
-            </p>
-            <p>加入购物车</p>
-          </div>
-        </div>
-        <div class="product-detail">
-          <img src="./image/W020201110582487305011_160.jpg" alt="">
-          <h4>55D8R 55英寸远场语音杜比</h4>
-          <div>
-            <h5>￥3999.00</h5>
-            <span>0人评价</span>
-          </div>
-          <div>
-            <p>
-              <input type="checkbox" name="" id="">
-              对比
-            </p>
-            <p>
-              收藏
-            </p>
-            <p>加入购物车</p>
-          </div>
-        </div>
-        <div class="product-detail">
-          <img src="./image/W020201110582487305011_160.jpg" alt="">
-          <h4>55D8R 55英寸远场语音杜比</h4>
-          <div>
-            <h5>￥3999.00</h5>
-            <span>0人评价</span>
-          </div>
-          <div>
-            <p>
-              <input type="checkbox" name="" id="">
-              对比
-            </p>
-            <p>
-              收藏
-            </p>
-            <p>加入购物车</p>
-          </div>
-        </div>
-        <div class="product-detail">
-          <img src="./image/W020201110582487305011_160.jpg" alt="">
-          <h4>55D8R 55英寸远场语音杜比</h4>
-          <div>
-            <h5>￥3999.00</h5>
-            <span>0人评价</span>
-          </div>
-          <div>
-            <p>
-              <input type="checkbox" name="" id="">
-              对比
-            </p>
-            <p>
-              收藏
-            </p>
-            <p>加入购物车</p>
-          </div>
-        </div>
-        <div class="product-detail">
-          <img src="./image/W020201110582487305011_160.jpg" alt="">
-          <h4>55D8R 55英寸远场语音杜比</h4>
-          <div>
-            <h5>￥3999.00</h5>
-            <span>0人评价</span>
-          </div>
-          <div>
-            <p>
-              <input type="checkbox" name="" id="">
-              对比
-            </p>
-            <p>
-              收藏
-            </p>
-            <p>加入购物车</p>
-          </div>
-        </div>
-        <div class="product-detail">
-          <img src="./image/W020201110582487305011_160.jpg" alt="">
-          <h4>55D8R 55英寸远场语音杜比</h4>
-          <div>
-            <h5>￥3999.00</h5>
-            <span>0人评价</span>
-          </div>
-          <div>
-            <p>
-              <input type="checkbox" name="" id="">
-              对比
-            </p>
-            <p>
-              收藏
-            </p>
-            <p>加入购物车</p>
-          </div>
-        </div> -->
-      </div>
+
+    <!-- 尾部 -->
+    <div id="foot">
     </div>
-    <!-- 翻页 -->
-    <div class="next-con">
-      <div class="next-rigth">
-        <a href="">首页</a>
-        <a href="">＜</a>
-        <a href="">1</a>
-        <a href="">2</a>
-        <a href="">3</a>
-        <a href="">4</a>
-        <a href="">5</a>
-        <a href="">＞</a>
-        <a href="">尾页</a>
-      </div>
-    </div>
-    <!-- 为你推荐 -->
-    <div class="recommend-con">
-      <div class="recommend-right">
-        <div class="recommend-title">
-          <span>为您推荐</span>
-          <span></span>
-          <span>最近浏览</span>
-        </div>
-        <div class="recommend-show">
-          <div class="recommend-details">
-            <img src="./image/P020180723547366127006.jpg" alt="">
-            <h4>CHiQ冰箱</h4>
-            <h5>￥13997.00</h5>
-          </div>
-          <div class="recommend-details">
-            <img src="./image/P020180723547366127006.jpg" alt="">
-            <h4>CHiQ冰箱</h4>
-            <h5>￥13997.00</h5>
-          </div>
-          <div class="recommend-details">
-            <img src="./image/P020180723547366127006.jpg" alt="">
-            <h4>CHiQ冰箱</h4>
-            <h5>￥13997.00</h5>
-          </div>
-          <div class="recommend-details">
-            <img src="./image/P020180723547366127006.jpg" alt="">
-            <h4>CHiQ冰箱</h4>
-            <h5>￥13997.00</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <!-- 尾部公共样式-->
-  <div class="footerpage">
-    <script>
-      $('.footerpage').load('./footer.html');
-    </script>
-  </div>
-
-
-  <script src=" ./script/goodslist.js">
-  </script>
+    <script src="./js/mePublic.js"></script>
+    <script src="./js/load.js"></script>
+    <script src="./js/goodslist.js"></script>
 </body>
 
 </html>
