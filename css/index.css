@@ -602,7 +602,6 @@
   margin-right: 10px;
   color: #fff;
   font-size: 13px;
-  font-weight: bold;
 }
 .main_left .cla_show .cla_second .num {
   font-size: 100px;
@@ -614,13 +613,10 @@
 }
 .main_left .cla_show .cla_second .cla_third li:hover {
   background-color: #c81623;
-  color: #b30fd2;
+  color: #000;
 }
 .main_left .cla_show .cla_second .shopping_list {
   width: 700px;
-}
-.main_left {
-  /* 箭头 */
 }
 .main_left .cla_show .cla_second .shopping_list {
   width: 700px;
@@ -636,10 +632,10 @@
   font-size: 12px;
   font-weight: bold;
 }
-.main_left .cla_show .cla_second .shopping_list li:hover a {
+.main_left .cla_show .cla_second .shopping_list li a:hover {
   color: #b30fd2;
 }
-.main_left #main .main_container .main_right {
+#main .main_container .main_right {
   float: right;
   width: 220px;
   height: 440px;
@@ -648,24 +644,24 @@
   position: relative;
   z-index: 10;
 }
-.main_left #main .main_container .main_right h6 {
+#main .main_container .main_right h6 {
   height: 26px;
   line-height: 26px;
 }
-.main_left #main .main_container .main_right h6 a {
+#main .main_container .main_right h6 a {
   float: right;
   margin-right: 15px;
   color: #888;
   font-size: 12px;
 }
-.main_left #main .main_container .main_right h6 a:hover {
+#main .main_container .main_right h6 a:hover {
   color: #b30fd2;
 }
-.main_left #main .main_container .main_right .quick_news {
+#main .main_container .main_right .quick_news {
   padding-bottom: 10px;
   border-bottom: 1px dashed #666;
 }
-.main_left #main .main_container .main_right .quick_news li span {
+#main .main_container .main_right .quick_news li span {
   float: left;
   margin-right: 15px;
   height: 26px;
@@ -673,10 +669,10 @@
   color: #666;
   cursor: pointer;
 }
-.main_left #main .main_container .main_right .quick_news li span:hover {
+#main .main_container .main_right .quick_news li span:hover {
   color: #b30fd2;
 }
-.main_left #main .main_container .main_right .quick_news li a {
+#main .main_container .main_right .quick_news li a {
   float: left;
   color: #555;
   width: 165px;
@@ -686,14 +682,14 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.main_left #main .main_container .main_right .quick_news li a:hover {
+#main .main_container .main_right .quick_news li a:hover {
   color: #b30fd2;
 }
-.main_left #main .main_container .main_right .charge_bar {
+#main .main_container .main_right .charge_bar {
   position: relative;
   height: 153px;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_icon {
+#main .main_container .main_right .charge_bar .charge_icon {
   display: flex;
   height: 153px;
   justify-content: space-around;
@@ -703,33 +699,33 @@
   left: 0;
   top: 0;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_icon li {
+#main .main_container .main_right .charge_bar .charge_icon li {
   width: 33%;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_icon li a {
+#main .main_container .main_right .charge_bar .charge_icon li a {
   height: 16px;
   line-height: 16px;
   text-align: center;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_icon li .iconfont {
+#main .main_container .main_right .charge_bar .charge_icon li .iconfont {
   height: 48px;
   line-height: 48px;
   font-size: 28px;
   color: #333;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_icon li .arrow {
+#main .main_container .main_right .charge_bar .charge_icon li .arrow {
   font-size: 6px;
   color: #666;
   height: 10px;
   line-height: 10px;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_icon li:hover a {
+#main .main_container .main_right .charge_bar .charge_icon li:hover a {
   color: #b30fd2;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_icon .active:hover {
+#main .main_container .main_right .charge_bar .charge_icon .active:hover {
   color: #b30fd2;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_input {
+#main .main_container .main_right .charge_bar .charge_input {
   width: 250px;
   height: 220px;
   background-color: #fff;
@@ -740,7 +736,7 @@
   display: none;
   text-align: center;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_input .iconfont {
+#main .main_container .main_right .charge_bar .charge_input .iconfont {
   display: block;
   font-size: 30px;
   width: 30px;
@@ -753,20 +749,20 @@
   cursor: pointer;
   user-select: none;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_input .iconfont:hover {
+#main .main_container .main_right .charge_bar .charge_input .iconfont:hover {
   background-color: #ff2200;
   color: #fff;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_input img {
+#main .main_container .main_right .charge_bar .charge_input img {
   margin-left: 15px;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_input .charge_show {
+#main .main_container .main_right .charge_bar .charge_input .charge_show {
   display: none;
 }
-.main_left #main .main_container .main_right .charge_bar .charge_input .block {
+#main .main_container .main_right .charge_bar .charge_input .block {
   display: block;
 }
-.main_left #main .main_container .main_right .tv_img {
+#main .main_container .main_right .tv_img {
   width: 250px;
   height: 145px;
   background: url(../images/tv.jpg) no-repeat;
@@ -774,30 +770,30 @@
   margin-left: -15px;
   float: left;
 }
-.main_left #main .banner_list {
+#main .banner_list {
   width: 100%;
   height: 450px;
   background-color: #ff2220;
 }
-.main_left #main .banner_list .container {
+#main .banner_list .container {
   position: relative;
 }
-.main_left #main .banner_list .container .banner_wrap {
+#main .banner_list .container .banner_wrap {
   width: 750px;
   height: 450px;
   position: absolute;
   overflow: hidden;
   left: 200px;
 }
-.main_left #main .banner_list .container .banner_wrap li {
+#main .banner_list .container .banner_wrap li {
   position: absolute;
   z-index: 1;
   opacity: 0.1;
 }
-.main_left #main .banner_list .container .banner_wrap .show {
+#main .banner_list .container .banner_wrap .show {
   z-index: 9;
 }
-.main_left #main .banner_list .container .banner_wrap .btn {
+#main .banner_list .container .banner_wrap .btn {
   width: 186px;
   height: 10px;
   position: absolute;
@@ -806,7 +802,7 @@
   margin-left: -93px;
   z-index: 10;
 }
-.main_left #main .banner_list .container .banner_wrap .btn span {
+#main .banner_list .container .banner_wrap .btn span {
   float: left;
   width: 15px;
   height: 15px;
@@ -814,10 +810,11 @@
   margin: 0 8px;
   background-color: #fff;
 }
-.main_left #main .banner_list .container .banner_wrap .btn .light {
+#main .banner_list .container .banner_wrap .btn .light {
   background-color: #F5004B;
 }
-.main_left .banner_wrap .prevs {
+/* 箭头 */
+.banner_wrap .prevs {
   position: absolute;
   text-align: center;
   width: 35px;
@@ -834,7 +831,7 @@
   z-index: 10;
   user-select: none;
 }
-.main_left .banner_wrap .nexts {
+.banner_wrap .nexts {
   text-align: center;
   width: 35px;
   height: 56px;
@@ -851,16 +848,16 @@
   z-index: 10;
   user-select: none;
 }
-.main_left .prev:hover {
+.prev:hover {
   background-color: rgba(30, 30, 30, 0.5);
 }
-.main_left .next:hover {
+.next:hover {
   background-color: rgba(30, 30, 30, 0.5);
 }
-.main_left #charge .charge_day {
+#charge .charge_day {
   height: 250px;
 }
-.main_left #charge .charge_day .charge_left {
+#charge .charge_day .charge_left {
   float: left;
   height: 250px;
   width: 950px;
@@ -868,31 +865,31 @@
   border-color: #b30fd2 #ccc #ccc #ccc;
   margin-right: 10px;
 }
-.main_left #charge .charge_day .charge_left .charge_head {
+#charge .charge_day .charge_left .charge_head {
   float: left;
   height: 40px;
   line-height: 40px;
   width: 100%;
   border-bottom: 1px solid #ccc;
 }
-.main_left #charge .charge_day .charge_left .charge_head .icon {
+#charge .charge_day .charge_left .charge_head .icon {
   float: left;
   margin-left: 8px;
   width: 40px;
   height: 40px;
   background: url(../images/time.png) no-repeat;
 }
-.main_left #charge .charge_day .charge_left .charge_head .time_wrap {
+#charge .charge_day .charge_left .charge_head .time_wrap {
   float: right;
   width: 240px;
   height: 40px;
   line-height: 40px;
 }
-.main_left #charge .charge_day .charge_left .charge_head .time_wrap .time_wrap_text {
+#charge .charge_day .charge_left .charge_head .time_wrap .time_wrap_text {
   color: #b30fd2;
   margin-right: 5px;
 }
-.main_left #charge .charge_day .charge_left .charge_head .time_wrap .time_wrap_num {
+#charge .charge_day .charge_left .charge_head .time_wrap .time_wrap_num {
   display: inline-block;
   width: 28px;
   height: 28px;
@@ -903,7 +900,7 @@
   text-align: center;
   font-size: 16px;
 }
-.main_left #charge .charge_day .charge_left .charge_head .time_wrap i {
+#charge .charge_day .charge_left .charge_head .time_wrap i {
   display: inline-block;
   width: 10px;
   height: 20px;
@@ -913,34 +910,34 @@
   font-style: normal;
   color: #b30fd2;
 }
-.main_left #charge .charge_day .charge_left .charge_head .time_wrap a {
+#charge .charge_day .charge_left .charge_head .time_wrap a {
   display: inline-block;
   height: 40px;
   line-height: 40px;
   width: 0;
   vertical-align: middle;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap {
+#charge .charge_day .charge_left .charge_wrap {
   padding: 15px 0;
   width: 950px;
   height: 180px;
   position: relative;
   overflow: hidden;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar {
+#charge .charge_day .charge_left .charge_wrap .charge_bar {
   width: 1900px;
   height: 180px;
   position: absolute;
   top: 15px;
   left: 0;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul {
   width: 950px;
   display: flex;
   justify-content: space-around;
   float: left;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul li {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li {
   width: 25%;
   height: 180px;
   border-right: 1px dotted #ddd;
@@ -948,49 +945,49 @@
   position: relative;
   text-align: center;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul li:nth-child(4) {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li:nth-child(4) {
   border-right: none;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul li a {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li a {
   display: inline-block;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul li a img {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li a img {
   width: 120px;
   height: 120px;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul li span {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li span {
   display: block;
   cursor: pointer;
   text-align: left;
   height: 25px;
   line-height: 25px;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul li span:nth-child(3) {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li span:nth-child(3) {
   cursor: pointer;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul li span:nth-child(3):hover {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li span:nth-child(3):hover {
   color: #b30fd2;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul li span i {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li span i {
   font-size: 12px;
   color: #666;
   text-decoration: line-through;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul li .charge_price {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li .charge_price {
   color: #ef0930;
   font-size: 19px;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul li .charge_price a {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li .charge_price a {
   width: 164px;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .charge_bar ul li .charge_price a:hover {
+#charge .charge_day .charge_left .charge_wrap .charge_bar ul li .charge_price a:hover {
   color: #b30fd2;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .prevs {
+#charge .charge_day .charge_left .charge_wrap .prevs {
   position: absolute;
   text-align: center;
   width: 25px;
@@ -1008,7 +1005,7 @@
   user-select: none;
   display: none;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap .nexts {
+#charge .charge_day .charge_left .charge_wrap .nexts {
   text-align: center;
   width: 25px;
   height: 38px;
@@ -1026,34 +1023,34 @@
   user-select: none;
   display: none;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap:hover .prevs {
+#charge .charge_day .charge_left .charge_wrap:hover .prevs {
   display: block;
 }
-.main_left #charge .charge_day .charge_left .charge_wrap:hover .nexts {
+#charge .charge_day .charge_left .charge_wrap:hover .nexts {
   display: block;
 }
-.main_left #charge .charge_right {
+#charge .charge_right {
   border: 1px solid #ccc;
   height: 198px;
   overflow: hidden;
   border-top: 1px solid #b30fd2;
   padding: 26px;
 }
-.main_left #charge .charge_right span {
+#charge .charge_right span {
   height: 25px;
   line-height: 25px;
 }
-.main_left #charge .charge_right .right_title {
+#charge .charge_right .right_title {
   display: block;
   color: #333;
   text-align: left;
 }
-.main_left #charge .charge_right .right_text {
+#charge .charge_right .right_text {
   color: #ff346f;
   font-size: 16px;
   text-align: left;
 }
-.main_left #charge .charge_right a {
+#charge .charge_right a {
   float: left;
   height: 120px;
   width: 146px;
@@ -1061,87 +1058,87 @@
   text-align: center;
   margin-top: 42px;
 }
-.main_left #charge .charge_right a img {
+#charge .charge_right a img {
   height: 120px;
   width: 120px;
 }
-.main_left #charge .charge_ticket {
+#charge .charge_ticket {
   margin-top: 40px;
 }
-.main_left #charge .charge_ticket a {
+#charge .charge_ticket a {
   float: left;
   height: 110px;
 }
-.main_left #charge .charge_ticket .look_more {
+#charge .charge_ticket .look_more {
   height: 100px;
   margin-left: -5px;
 }
-.main_left #charge .charge_ticket .look_more img {
+#charge .charge_ticket .look_more img {
   width: 38px;
 }
-.main_left #charge .charge_ticket .look_more:hover {
+#charge .charge_ticket .look_more:hover {
   opacity: 0.9;
 }
-.main_left #charge .charge_ticket .look_center:hover {
+#charge .charge_ticket .look_center:hover {
   opacity: 0.9;
 }
-.main_left #guess .guess_title {
+#guess .guess_title {
   height: 37px;
   line-height: 37px;
 }
-.main_left #guess .guess_title .title_ch {
+#guess .guess_title .title_ch {
   font-size: 18px;
   color: #222;
 }
-.main_left #guess .guess_title .title_en {
+#guess .guess_title .title_en {
   font-size: 18px;
   color: #aaa;
 }
-.main_left #guess .guess_list {
+#guess .guess_list {
   height: 224px;
   border: 1px solid #ccc;
   padding: 20px 20px;
   display: flex;
   justify-content: space-around;
 }
-.main_left #guess .guess_list li {
+#guess .guess_list li {
   float: left;
   width: 180px;
   height: 224px;
   border-right: 1px dashed #ccc;
   text-align: center;
 }
-.main_left #guess .guess_list li:nth-child(6) {
+#guess .guess_list li:nth-child(6) {
   border-right: none;
 }
-.main_left #guess .guess_list li > a {
+#guess .guess_list li > a {
   display: inline-block;
   width: 120px;
   height: 120px;
   margin-bottom: 31px;
   margin-top: 15px;
 }
-.main_left #guess .guess_list li > a img {
+#guess .guess_list li > a img {
   display: inline-block;
   width: 120px;
   height: 120px;
 }
-.main_left #guess .guess_list li > div {
+#guess .guess_list li > div {
   text-align: left;
 }
-.main_left #guess .guess_list li > div a {
+#guess .guess_list li > div a {
   display: inline-block;
   height: 19px;
   line-height: 19px;
 }
-.main_left #guess .guess_list li > div span {
+#guess .guess_list li > div span {
   display: inline-block;
   font-size: 14px;
   color: #ff062b;
   height: 30px;
   line-height: 30px;
 }
-.main_left #floor .common_floor .floor_head .floor_title {
+#floor .common_floor .floor_head .floor_title {
   float: left;
   height: 39px;
   line-height: 39px;
@@ -1150,10 +1147,10 @@
   color: #111;
   font-weight: 600;
 }
-.main_left #floor .common_floor .floor_head .head_chose {
+#floor .common_floor .floor_head .head_chose {
   float: right;
 }
-.main_left #floor .common_floor .floor_head .head_chose li {
+#floor .common_floor .floor_head .head_chose li {
   float: left;
   height: 30px;
   line-height: 30px;
@@ -1165,42 +1162,42 @@
   cursor: pointer;
   margin-top: 9px;
 }
-.main_left #floor .common_floor .floor_head .head_chose .active {
+#floor .common_floor .floor_head .head_chose .active {
   background-color: #719ff7;
   color: #fff;
 }
-.main_left #floor .common_floor .floor_main {
+#floor .common_floor .floor_main {
   height: 470px;
   border-top: 1px solid #719ff7;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left {
+#floor .common_floor .floor_main .floor_main_left {
   float: left;
   width: 210px;
   height: 470px;
   background-color: #fff;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left a {
+#floor .common_floor .floor_main .floor_main_left a {
   float: left;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left a img {
+#floor .common_floor .floor_main .floor_main_left a img {
   float: left;
   width: 220px;
   height: 278px;
   margin-left: -10px;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left .main_left_class {
+#floor .common_floor .floor_main .floor_main_left .main_left_class {
   float: left;
   width: 210px;
   background-color: #719ff7;
   color: #fff;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left .main_left_class .class_head {
+#floor .common_floor .floor_main .floor_main_left .main_left_class .class_head {
   height: 32px;
   line-height: 32px;
   background-color: #599af4;
   padding-left: 15px;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left .main_left_class .class_head a {
+#floor .common_floor .floor_main .floor_main_left .main_left_class .class_head a {
   float: none;
   height: 32px;
   line-height: 32px;
@@ -1208,72 +1205,72 @@
   color: #fff;
   cursor: pointer;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left .main_left_class .class_head a:hover {
+#floor .common_floor .floor_main .floor_main_left .main_left_class .class_head a:hover {
   text-decoration: underline;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left .main_left_class .class_head i {
+#floor .common_floor .floor_main .floor_main_left .main_left_class .class_head i {
   font-style: normal;
   margin: 4px;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left .main_left_class .class_section {
+#floor .common_floor .floor_main .floor_main_left .main_left_class .class_section {
   padding: 6px 0 6px 15px;
   height: 148px;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left .main_left_class .class_section li {
+#floor .common_floor .floor_main .floor_main_left .main_left_class .class_section li {
   float: left;
   width: 33%;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left .main_left_class .class_section li a {
+#floor .common_floor .floor_main .floor_main_left .main_left_class .class_section li a {
   float: left;
   color: #fff;
   height: 29px;
   line-height: 29px;
   font-size: 12px;
 }
-.main_left #floor .common_floor .floor_main .floor_main_left .main_left_class .class_section li a:hover {
+#floor .common_floor .floor_main .floor_main_left .main_left_class .class_section li a:hover {
   text-decoration: underline;
 }
-.main_left .floor_main .floor_main_right {
+.floor_main .floor_main_right {
   height: 470px;
   overflow: hidden;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap {
+.floor_main .floor_main_right .floor_r_wrap {
   position: relative;
   height: 470px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap dt {
+.floor_main .floor_main_right .floor_r_wrap dt {
   position: absolute;
   z-index: 1;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special {
+.floor_main .floor_main_right .floor_r_wrap .special {
   z-index: 9;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_left {
+.floor_main .floor_main_right .floor_r_wrap .special .special_left {
   float: left;
   width: 390px;
   height: 470px;
   position: relative;
   border-left: 1px solid #ccc;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_left ul {
+.floor_main .floor_main_right .floor_r_wrap .special .special_left ul {
   position: relative;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_left ul li {
+.floor_main .floor_main_right .floor_r_wrap .special .special_left ul li {
   position: absolute;
   z-index: 1;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_left ul li a {
+.floor_main .floor_main_right .floor_r_wrap .special .special_left ul li a {
   float: left;
   width: 389px;
   height: 470px;
   overflow: hidden;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_left ul li a img {
+.floor_main .floor_main_right .floor_r_wrap .special .special_left ul li a img {
   float: left;
   width: 389px;
   height: 470px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_left .nexts {
+.floor_main .floor_main_right .floor_r_wrap .special .special_left .nexts {
   text-align: center;
   width: 28px;
   height: 42px;
@@ -1291,10 +1288,10 @@
   user-select: none;
   display: none;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_left .nexts:hover {
+.floor_main .floor_main_right .floor_r_wrap .special .special_left .nexts:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_left .prevs {
+.floor_main .floor_main_right .floor_r_wrap .special .special_left .prevs {
   position: absolute;
   text-align: center;
   width: 28px;
@@ -1312,155 +1309,155 @@
   user-select: none;
   display: none;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_left .prevs:hover {
+.floor_main .floor_main_right .floor_r_wrap .special .special_left .prevs:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_left:hover .nexts {
+.floor_main .floor_main_right .floor_r_wrap .special .special_left:hover .nexts {
   display: block;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_left:hover .prevs {
+.floor_main .floor_main_right .floor_r_wrap .special .special_left:hover .prevs {
   display: block;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_right {
+.floor_main .floor_main_right .floor_r_wrap .special .special_right {
   overflow: hidden;
   height: 470px;
   border-left: 1px solid #ccc;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_right li {
+.floor_main .floor_main_right .floor_r_wrap .special .special_right li {
   float: left;
   width: 198px;
   height: 234px;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_right li a {
+.floor_main .floor_main_right .floor_r_wrap .special .special_right li a {
   float: left;
   width: 198px;
   height: 234px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .special .special_right li a img {
+.floor_main .floor_main_right .floor_r_wrap .special .special_right li a img {
   float: left;
   width: 198px;
   height: 234px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .new_shop {
+.floor_main .floor_main_right .floor_r_wrap .new_shop {
   overflow: hidden;
   width: 990px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .new_shop ul li {
+.floor_main .floor_main_right .floor_r_wrap .new_shop ul li {
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   width: 196px;
   height: 234px;
   overflow: hidden;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .new_shop ul li a {
+.floor_main .floor_main_right .floor_r_wrap .new_shop ul li a {
   display: block;
   width: 197px;
   height: 130px;
   text-align: center;
   margin-top: 22px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .new_shop ul li a img {
+.floor_main .floor_main_right .floor_r_wrap .new_shop ul li a img {
   display: inline-block;
   width: 130px;
   height: 130px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .new_shop ul li span {
+.floor_main .floor_main_right .floor_r_wrap .new_shop ul li span {
   display: block;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .new_shop ul li span:nth-of-type(1) {
+.floor_main .floor_main_right .floor_r_wrap .new_shop ul li span:nth-of-type(1) {
   display: block;
   height: 51px;
   line-height: 51px;
   text-indent: 20px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .new_shop ul li span:nth-of-type(2) {
+.floor_main .floor_main_right .floor_r_wrap .new_shop ul li span:nth-of-type(2) {
   display: block;
   height: 30px;
   line-height: 30px;
   text-indent: 20px;
   color: #ff062b;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .hot_advice {
+.floor_main .floor_main_right .floor_r_wrap .hot_advice {
   overflow: hidden;
   width: 990px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .hot_advice ul li {
+.floor_main .floor_main_right .floor_r_wrap .hot_advice ul li {
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   width: 196px;
   height: 234px;
   overflow: hidden;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .hot_advice ul li a {
+.floor_main .floor_main_right .floor_r_wrap .hot_advice ul li a {
   display: block;
   width: 197px;
   height: 130px;
   text-align: center;
   margin-top: 22px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .hot_advice ul li a img {
+.floor_main .floor_main_right .floor_r_wrap .hot_advice ul li a img {
   display: inline-block;
   width: 130px;
   height: 130px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .hot_advice ul li span {
+.floor_main .floor_main_right .floor_r_wrap .hot_advice ul li span {
   display: block;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .hot_advice ul li span:nth-of-type(1) {
+.floor_main .floor_main_right .floor_r_wrap .hot_advice ul li span:nth-of-type(1) {
   display: block;
   height: 51px;
   line-height: 51px;
   text-indent: 20px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .hot_advice ul li span:nth-of-type(2) {
+.floor_main .floor_main_right .floor_r_wrap .hot_advice ul li span:nth-of-type(2) {
   display: block;
   height: 30px;
   line-height: 30px;
   text-indent: 20px;
   color: #ff062b;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .low_price {
+.floor_main .floor_main_right .floor_r_wrap .low_price {
   overflow: hidden;
   width: 990px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .low_price ul li {
+.floor_main .floor_main_right .floor_r_wrap .low_price ul li {
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   width: 196px;
   height: 234px;
   overflow: hidden;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .low_price ul li a {
+.floor_main .floor_main_right .floor_r_wrap .low_price ul li a {
   display: block;
   width: 197px;
   height: 130px;
   text-align: center;
   margin-top: 22px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .low_price ul li a img {
+.floor_main .floor_main_right .floor_r_wrap .low_price ul li a img {
   display: inline-block;
   width: 130px;
   height: 130px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .low_price ul li span {
+.floor_main .floor_main_right .floor_r_wrap .low_price ul li span {
   display: block;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .low_price ul li span:nth-of-type(1) {
+.floor_main .floor_main_right .floor_r_wrap .low_price ul li span:nth-of-type(1) {
   display: block;
   height: 51px;
   line-height: 51px;
   text-indent: 20px;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .low_price ul li span:nth-of-type(2) {
+.floor_main .floor_main_right .floor_r_wrap .low_price ul li span:nth-of-type(2) {
   display: block;
   height: 30px;
   line-height: 30px;
   text-indent: 20px;
   color: #ff062b;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .next {
+.floor_main .floor_main_right .floor_r_wrap .next {
   text-align: center;
   width: 30px;
   height: 50px;
@@ -1478,9 +1475,9 @@
   user-select: none;
   display: none;
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap .next:hover {
+.floor_main .floor_main_right .floor_r_wrap .next:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.main_left .floor_main .floor_main_right .floor_r_wrap:hover .next {
+.floor_main .floor_main_right .floor_r_wrap:hover .next {
   display: block;
 }

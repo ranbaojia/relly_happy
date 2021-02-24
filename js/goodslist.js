@@ -37,27 +37,30 @@
         // 则只增加数量，不增加长度，如果没有，直接push进去
         var $shop_btn = $('.product-show-right');
         $shop_btn.on('click', '.addShopping', function() {
-                var goodsArr = [];
-                var flag = true;
-                if (localStorage.getItem("goodsArr")) {
-                    goodsArr = JSON.parse(localStorage.getItem("goodsArr"));
-                }
-                var bomId = this.getAttribute('data_id');
-                var obj = { num: 0, id: bomId };
-                goodsArr.forEach((item, index) => {
-                    if (item.id === bomId) {
-                        flag = !flag
-                        item.num++;
-                    } //else {
-                    // goodsArr.push(obj)
-                    // }
-                });
-                if (flag) {
-                    goodsArr.push(obj)
-                };
-                localStorage.setItem("goodsArr", JSON.stringify(JSON))
-            })
-            // 点击跳转到购物车
+            var goodsArr = [];
+            var flag = true;
+            if (localStorage.getItem("goods")) {
+                goodsArr = JSON.parse(localStorage.getItem("goods"));
+            }
+            var bomId = this.getAttribute('data_id');
+            var obj = { num: 1, id: bomId };
+            goodsArr.forEach((item, index) => {
+                if (item.id === bomId) {
+                    flag = !flag
+                    item.num++;
+                } //else {
+                // goodsArr.push(obj)
+                // }
+            });
+            if (flag) {
+                goodsArr.push(obj)
+            };
+            localStorage.setItem("goods", JSON.stringify(goodsArr))
+                // localStorage.removeItem("goodsArr");
+                // localStorage.removeItem("goods");
+        })
+
+        // 点击跳转到购物车
         $('.sub_shop').click(() => {
             location.href = "./shoplist.html";
         });
