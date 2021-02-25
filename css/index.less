@@ -404,11 +404,10 @@
         /* 搜索区 */
     #search  {
        //搜索框
-        overflow: hidden;
         .container{
           border:1px solid #fff;
           overflow: hidden;
-        }
+        };     
         // logo区
         .search_logo{
         float: left;
@@ -424,6 +423,7 @@
             vertical-align:middle;
         }
     }
+
     //  我的购物车
     .my_shopping{
         float: right;
@@ -483,14 +483,15 @@
 
         }
 
-    }
+    };
     .search_nav{
         width: 502px;
         margin: 0 auto;
         height: 90px;
-        overflow: hidden;
+        // overflow: hidden;
         font-size: 14px;
         margin-top:32px;
+        position: relative;          
         .search_chose{
             float: left;
             width: 62px;
@@ -1734,4 +1735,42 @@
         } 
     }
 }}
-
+// jsonp部分
+#search{
+    position: relative;
+    .search_json {
+        position: absolute;
+        left: 424px;
+        top: 65px;
+        background-color: #aaa;
+        border: 1px solid #aaa;
+        z-index: 32;
+        // display: none;
+    }
+    
+    .search_json:hover {
+        display: block;
+    }
+    
+    .search_json li {
+        clear: both;
+        width: 498px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #fff;
+    }
+    
+    .search_json li a {
+        float: left;
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        text-indent: 10px;
+        color: #666;
+    }
+    
+    .search_json li:hover {
+        background-color: #aaa;
+    }
+}

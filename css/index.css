@@ -330,9 +330,6 @@
   background: url(../images/ui.png) no-repeat 0 -799px;
 }
 /* 搜索区 */
-#search {
-  overflow: hidden;
-}
 #search .container {
   border: 1px solid #fff;
   overflow: hidden;
@@ -405,9 +402,9 @@
   width: 502px;
   margin: 0 auto;
   height: 90px;
-  overflow: hidden;
   font-size: 14px;
   margin-top: 32px;
+  position: relative;
 }
 #search .search_nav .search_chose {
   float: left;
@@ -1480,4 +1477,37 @@
 }
 .floor_main .floor_main_right .floor_r_wrap:hover .next {
   display: block;
+}
+#search {
+  position: relative;
+}
+#search .search_json {
+  position: absolute;
+  left: 424px;
+  top: 65px;
+  background-color: #aaa;
+  border: 1px solid #aaa;
+  z-index: 32;
+}
+#search .search_json:hover {
+  display: block;
+}
+#search .search_json li {
+  clear: both;
+  width: 498px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+}
+#search .search_json li a {
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 10px;
+  color: #666;
+}
+#search .search_json li:hover {
+  background-color: #aaa;
 }

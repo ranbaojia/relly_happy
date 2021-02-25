@@ -1,0 +1,65 @@
+{
+  "id": "2187789",
+  "name": "符号",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7325951",
+      "name": "减_",
+      "font_class": "jian_",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "12686833",
+      "name": "减",
+      "font_class": "icon-",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "1517783",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "2570215",
+      "name": "加",
+      "font_class": "jia1",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "5026282",
+      "name": "减",
+      "font_class": "jjian-",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "5026283",
+      "name": "加",
+      "font_class": "jjia-",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "7925900",
+      "name": "加号",
+      "font_class": "jiahao",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "15907457",
+      "name": "加号",
+      "font_class": "jiahao1",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    }
+  ]
+}

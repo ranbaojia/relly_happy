@@ -6,7 +6,6 @@
     }).then((val) => {
         var product_show = $q('.product-show-right');
         var product_detail = $q('.product-detail');
-
         var str = "";
         val.forEach((item, index) => {
             str += `
@@ -32,7 +31,7 @@
         });
         product_show.innerHTML = str;
 
-        //点击添加购物车，本地存储也改变
+        // 点击添加购物车，本地存储也改变
         // 需求，如果点击购物车，本地存储的值先判断有没有这个id的商品，如果有，
         // 则只增加数量，不增加长度，如果没有，直接push进去
         var $shop_btn = $('.product-show-right');
@@ -55,14 +54,28 @@
             if (flag) {
                 goodsArr.push(obj)
             };
-            localStorage.setItem("goods", JSON.stringify(goodsArr))
-                // localStorage.removeItem("goodsArr");
-                // localStorage.removeItem("goods");
+            localStorage.setItem("goods", JSON.stringify(goodsArr));
+            // 改变购物车数量
+            addGoods();
+            // localStorage.removeItem("goodsArr");
+            // localStorage.removeItem("goods");
         })
 
         // 点击跳转到购物车
         $('.sub_shop').click(() => {
             location.href = "./shoplist.html";
         });
+
+        // 获取本地存储数据中的goods中商品的总数
+        // 获取本地存储数据中的goods中商品的总数
+
+        // var goodsArr = JSON.parse(localStorage.getItem('goods'));
+        // var sum = 0;
+        // goodsArr.forEach((item, index) => {
+        //     sum += item.num;
+
+        // });
+
+
     })
 })();

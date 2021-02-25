@@ -15,8 +15,9 @@ ul li {
     width: 800px;
     height: 36px;
     line-height: 36px;
-    background-color: #eee;
+    background-color: #efefef;
     padding: 0 10px;
+    border: 1px solid #ccc;
 }
 
 .head_nav span {
@@ -46,17 +47,17 @@ ul li {
 
 .wrap .wrap_list {
     width: 820px;
-    overflow: hidden;
 }
 
 .wrap_list li {
     width: 800px;
     height: 100px;
     line-height: 100px;
-    background-color: #eee;
+    background-color: #fff;
     padding: 0 10px;
     margin: 10px 0;
     border-top: 3px solid #AAAAAA;
+    border: 1px solid #ccc;
 }
 
 .wrap_list li .border {

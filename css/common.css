@@ -4,6 +4,10 @@ body {
     background-color: #fff;
 }
 
+body {
+    position: relative;
+}
+
 ul li {
     float: left;
 }

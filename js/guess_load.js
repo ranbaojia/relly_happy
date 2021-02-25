@@ -1,5 +1,3 @@
-var $column = $('#column');
-$column.load("./sub_html/fix.html");
 var $head = $('#head');
 $head.load('./sub_html/head.html')
 

@@ -138,4 +138,64 @@
 
     })
 
-})()
+})();
+
+(function() {
+    var sub = $q('.buy-inf .clearfix .sub');
+    var plus = $q('.buy-inf .clearfix .plus');
+    var num = $q('.buy-inf .clearfix .number');
+    number = parseInt(num.innerText);
+    // --
+    sub.onclick = function() {
+        number--;
+        if (number <= 0) {
+            number = 0;
+        }
+        num.innerHTML = val;
+    };
+    // ++
+    plus.onclick = function() {
+        number++;
+        if (number <= 0) {
+            number = 0;
+        }
+        num.innerHTML = number;
+    };
+    // 加入购物车 更新固定栏数据
+    var addShop = $q('.buy-collect .shopping-car');
+
+    addShop.onclick = function() {
+        ajax({
+            type: "get",
+            dataType: "json",
+            url: "./json/goodslist.json"
+        }).then((val) => {
+
+            //更新本地存储数据
+            var goodsArr = [];
+            var flag = true;
+            if (localStorage.getItem("goods")) {
+                goodsArr = JSON.parse(localStorage.getItem("goods"));
+            }
+            var bomId = this.getAttribute('data_id');
+            var obj = { num: 1, id: bomId };
+            goodsArr.forEach((item, index) => {
+                if (item.id === bomId) {
+                    flag = !flag
+                    item.num += number;
+                } //else {
+                // goodsArr.push(obj)
+                // }
+            });
+            if (flag) {
+                goodsArr.push(obj)
+            };
+            localStorage.setItem("goods", JSON.stringify(goodsArr));
+
+            // 改变购物车数量
+            addGoods();
+            // localStorage.removeItem("goodsArr");
+            // localStorage.removeItem("goods");
+        })
+    }
+})();
