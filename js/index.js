@@ -128,8 +128,6 @@
  })();
 
 
-<<<<<<< HEAD
-=======
  // 搜索框跨域jsonp访问
 
  // 当输入框输入文字时，下拉提示框出现
@@ -170,7 +168,6 @@
  })();
 
 
->>>>>>> test
  // 轮播图js
 
  (function() {
@@ -184,10 +181,6 @@
      var prevIndex = 0;
      var timer = null;
      var mark = 0;
-<<<<<<< HEAD
-     console.log(ali);
-=======
->>>>>>> test
      // 背景颜色变化的数据库
      var arr = ['#A6D8C7', '#EAC7A1', '#F2BFC7', '#F2BFB7', '#B90909', '#D8453B']
      var lastTime = 0;
@@ -264,16 +257,10 @@
      //第三步 点击箭头按钮切换图片
      next.onclick = function() {
          clearInterval(timer);
-<<<<<<< HEAD
-         var nowTime = Date.now();
-         //  同样用函数节流，防止用户点击过快
-         if (lastTime && (nowTime - lastTime) < 100) {
-=======
          clearInterval(imgsmax[prevIndex].timer)
          var nowTime = Date.now();
          //  同样用函数节流，防止用户点击过快
          if (lastTime && (nowTime - lastTime) < 200) {
->>>>>>> test
              // 这里用防抖节流最后点击的一次把autoplay加在定时器里会
              // 和autoplay的定时器发生冲突
              // clearInterval(next.timer)
@@ -291,18 +278,10 @@
      // 点击上一张，切换到上一张图片
      prev.onclick = function() {
          // 先清除定时器， 等到图片运动到达target在调用movePrev()和autoplay();
-<<<<<<< HEAD
          clearInterval(timer);
          var nowTime = Date.now();
 
          if (lastTime && (nowTime - lastTime) < 100) {
-=======
-         clearInterval(imgsmax[prevIndex].timer)
-         clearInterval(timer);
-         var nowTime = Date.now();
-
-         if (lastTime && (nowTime - lastTime) < 200) {
->>>>>>> test
              clearInterval(timer)
                  // 最后一次点击，触发一次自动播放
              autoPlay();
@@ -585,15 +564,8 @@
      }).then((val) => {
          var Array = val[0].goodsArr;
          // console.log(obj);
-<<<<<<< HEAD
-         console.log(Array);
          var cla_show = $q('.cla_show');
          var cla_second = $qa('.cla_second');
-         console.log(cla_second);
-=======
-         var cla_show = $q('.cla_show');
-         var cla_second = $qa('.cla_second');
->>>>>>> test
          Array.forEach((itemOne, num) => {
              //  console.log(itemOne); //15个obj
              var str1 = "";
@@ -625,15 +597,7 @@
 
              });
              cla_second[num].innerHTML = str1;
-<<<<<<< HEAD
-             console.log(cla_second[num]);
-
-
          });
-         console.log(cla_show);
-=======
-         });
->>>>>>> test
      });
  })();
 

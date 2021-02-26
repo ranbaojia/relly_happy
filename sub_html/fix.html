@@ -112,13 +112,13 @@
         <a href="./index.html"><span class="iconfont">&#xe68d;</span></a>
     </li>
     <li>
-        <a href=""><span class="iconfont">&#xe68a;</span></a>
+        <a href="javascript:"><span class="iconfont">&#xe68a;</span></a>
     </li>
     <li>
-        <a href=""><span class="iconfont">&#xe636;</span></a>
+        <a href="javascript:"><span class="iconfont">&#xe636;</span></a>
     </li>
-    <li>
-        <a href=""><span class="iconfont arrow">&#xe688;</span></a>
+    <li class="goTop">
+        <a href="javascript:"><span class="iconfont arrow">&#xe688;</span></a>
     </li>
 </ul>
 <script>
@@ -134,9 +134,14 @@
             var column = $q('#column #wrapper .shopNum .num');
             console.log(column);
             column.innerText = sum;
-        }
-
+        };
     };
     addGoods();
     window.addGoods = addGoods;
+    // 点击goTop按钮，回到顶部
+    var goTop = $q('.goTop');
+    goTop.onclick = function() {
+        var top = document.documentElement.scrollTop || document.body.scrollTop;
+        document.documentElement.scrollTop = 0;
+    }
 </script>
