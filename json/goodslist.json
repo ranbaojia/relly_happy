@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
 
 
 
@@ -8,6 +9,8 @@
 
 
 
+=======
+>>>>>>> test
     { "title": "海信(hisense) 58 A52E58英寸4K智", "price": "2599.00", "comment": "0", "imgUrl": "./images/goodslist1.jpg", "id": "abc1" },
     { "title": "夏普(SHARP) 50 K6A 50 英寸4K超清", "price": "4399.00", "comment": "1", "imgUrl": "./images/goodslist2.jpg", "id": "abc2" },
     { "title": "华为智慧屏V55i - A 55 英寸HEGE - 550", "price": "2599.00", "comment": "2", "imgUrl": "./images/goodslist3.jpg", "id": "abc3" },
@@ -27,5 +30,10 @@
     { "title": "海信(hisense) 58 A52E58英寸4K智", "price": "4399.00", "comment": "7", "imgUrl": "./images/goodslist5.jpg", "id": "abc17" },
     { "title": "海尔(Haier) LU58G6158英寸4K超高", "price": "2599.00", "comment": "12", "imgUrl": "./images/goodslist6.jpg", "id": "abc18" },
     { "title": "华为智慧屏V55i - A 55 英寸HEGE - 550", "price": "2599.00", "comment": "10", "imgUrl": "./images/goodslist7.jpg", "id": "abc19" },
+<<<<<<< HEAD
     { "title": "夏普(SHARP) 50 K6A 50 英寸4K超清", "price": "2499.00", "comment": "10", "imgUrl": "./images/goodslist8.jpg", "id": "abc20" }
+=======
+    { "title": "夏普(SHARP) 50 K6A 50 英寸4K超清", "price": "2499.00", "comment": "10", "imgUrl": "./images/goodslist8.jpg", "id": "abc20" },
+    { "title": "CHiQ 65英寸超薄人工智能4.0IoT物联杜比视界电视 65Q6S", "price": "5899.00", "comment": "1", "imgUrl": "./image/dimg1.jpg", "id": "abc21" }
+>>>>>>> test
 ]

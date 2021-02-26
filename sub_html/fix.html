@@ -1,0 +1,142 @@
+<style>
+    #column {
+        position: fixed;
+        height: 257px;
+        width: 47px;
+        z-index: 2;
+        right: 0;
+        /* background-color: blue; */
+        top: 50%;
+        margin-top: -128px;
+    }
+    
+    #column #wrapper {
+        position: absolute;
+        /* left: 584px; */
+    }
+    
+    #column #wrapper li {
+        transition: 0.3s all;
+    }
+    
+    #column #wrapper li a {
+        position: relative;
+        float: left;
+        width: 47px;
+        height: 49px;
+        background-color: #4C4C4C;
+    }
+    
+    #column #wrapper li a .arrow {
+        transform: rotateX(-180deg);
+        animation: ko 1s ease infinite;
+    }
+    
+    @keyframes ko {
+        0% {
+            font-size: 28px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        30% {
+            font-size: 29px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        50% {
+            font-size: 30px;
+            color: rgba(255, 255, 255, 1);
+        }
+        70% {
+            font-size: 29px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        100% {
+            font-size: 28px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    
+    #column #wrapper li a span {
+        width: 47px;
+        text-align: center;
+        float: left;
+        color: rgba(255, 255, 255, 1);
+        font-size: 30px;
+    }
+    
+    #column #wrapper .shopNum .num {
+        position: absolute;
+        left: 18px;
+        top: 4px;
+        font-size: 16px;
+        color: red;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        border-radius: 50%;
+        font-weight: 600;
+    }
+    
+    #column #wrapper .shopNum a {
+        padding-top: 6px;
+    }
+    
+    #column #wrapper .shopNum a span {
+        width: 47px;
+        text-align: center;
+        float: left;
+        color: #fff;
+        font-size: 30px;
+    }
+    
+    #column #wrapper li a img {
+        float: left;
+        transform: scale(1);
+        transition: 0.3s all;
+        opacity: 1;
+    }
+    
+    #column #wrapper li:hover {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+</style>
+<ul id="wrapper">
+    <li class="shopNum">
+        <a href="./shoplist.html"><span class="iconfont">&#xe61e;</span>
+            <span class="num"></span>
+        </a>
+
+    </li>
+    <li>
+        <a href="./index.html"><span class="iconfont">&#xe68d;</span></a>
+    </li>
+    <li>
+        <a href=""><span class="iconfont">&#xe68a;</span></a>
+    </li>
+    <li>
+        <a href=""><span class="iconfont">&#xe636;</span></a>
+    </li>
+    <li>
+        <a href=""><span class="iconfont arrow">&#xe688;</span></a>
+    </li>
+</ul>
+<script>
+    function addGoods() {
+        if (localStorage.getItem('goods')) {
+            var goodsArr = JSON.parse(localStorage.getItem('goods'));
+            var sum = 0;
+
+            goodsArr.forEach((item, index) => {
+                sum += item.num;
+
+            });
+            var column = $q('#column #wrapper .shopNum .num');
+            console.log(column);
+            column.innerText = sum;
+        }
+
+    };
+    addGoods();
+    window.addGoods = addGoods;
+</script>
