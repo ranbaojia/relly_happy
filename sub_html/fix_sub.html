@@ -1,0 +1,192 @@
+<style>
+    #fixSearch {
+        width: 100%;
+        background-color: #fff;
+        display: none;
+    }
+    
+    #fixSearch #search {
+        float: left;
+        margin-left: 185px;
+        height: 90px;
+    }
+    
+    #fixSearch #search .search_nav {
+        float: left;
+        width: 502px;
+        margin: 0 auto;
+        height: 90px;
+        font-size: 14px;
+        margin-top: 32px;
+        position: relative;
+    }
+    
+    #fixSearch #search .search_nav .search_chose {
+        float: left;
+        width: 62px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #b30fd2;
+        border-right: none;
+    }
+    
+    #fixSearch #search .search_nav .search_chose span {
+        float: left;
+    }
+    
+    #fixSearch #search .search_nav .search_chose .mark {
+        padding-right: 8px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #fixSearch #search .search_nav .search_chose .mark:hover {
+        border: none;
+    }
+    
+    #fixSearch #search .search_nav .search_chose .arrow {
+        overflow: hidden;
+        font-size: 24px;
+        width: 18px;
+        height: 15px;
+        line-height: 15px;
+        position: relative;
+        text-align: center;
+        left: -4px;
+        top: 6px;
+    }
+    
+    #fixSearch #search .search_nav .search_chose .son {
+        width: 62px;
+        border: 1px solid #b30fd2;
+        left: -1px;
+    }
+    
+    #fixSearch #search .search_nav .search_chose .son li {
+        width: 100%;
+    }
+    
+    #fixSearch #search .search_nav .search_chose .son li a {
+        height: 24px;
+        line-height: 24px;
+        padding-left: 7px;
+        float: left;
+        font-size: 14px;
+    }
+    
+    #fixSearch #search .search_nav input {
+        float: left;
+        border: 1px solid #b30fd2;
+    }
+    
+    #fixSearch #search .search_nav ::-webkit-input-placeholder {
+        font-size: 12px;
+        color: #888;
+    }
+    
+    #fixSearch #search .search_nav .search_input {
+        width: 345px;
+        height: 30px;
+        border-color: #b30fd2;
+        outline: none;
+        color: #666;
+        text-indent: 1rem;
+    }
+    
+    #fixSearch #search .search_nav .search_sub {
+        width: 90px;
+        height: 32px;
+        background-color: #b30fd2;
+        font-size: 16px;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #all_clas {
+        float: left;
+        width: 204px;
+        height: 38px;
+        line-height: 38px;
+        background-color: #f2f2f2;
+    }
+    
+    #all_clas span:nth-child(1) {
+        float: left;
+        font-size: 14px;
+        color: #8e8e8e;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+    
+    #all_clas span:nth-child(2) {
+        float: right;
+        font-size: 14px;
+        color: #8e8e8e;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+    
+    #fixSearch .container {
+        height: 56px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .fixMove {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 700;
+    }
+</style>
+
+
+<div class="container">
+    <div id="all_clas">
+        <span>全部商品分类</span>
+        <span class="iconfont">&#xe677;</span>
+    </div>
+
+    <!-- 搜索框 -->
+    <div id="search">
+        <div class="search_nav clearfix">
+            <!-- 搜索框商品二级菜单 -->
+            <div class="search_chose display">
+                <span class="mark"><span>商品</span> <span class="iconfont arrow">&#xe686;</span></span>
+                <ul class="son">
+                    <li><a href="">商品</a></li>
+                    <li><a href="">店铺</a></li>
+                </ul>
+            </div>
+            <!-- 用jsonp实现跨域请求接口数据 -->
+            <input class="search_input" type="text" placeholder="华为手机">
+            <button class="search_sub" type="submit">搜索</button>
+        </div>
+    </div>
+</div>
+<script>
+    var fixSearch = $q('#fixSearch');
+
+    var head = $q('#head');
+    var search = $q('#search');
+    var main = $q('#main');
+
+    var height = head.offsetHeight + search.offsetHeight + main.offsetHeight;
+    console.log(height);
+    var fixSearch = $q('#fixSearch');
+
+    window.onscroll = function() {
+        // 监听页面滚轮事件
+        var topDistance = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset;
+        console.log(topDistance);
+        if (topDistance >= height) {
+            fixSearch.style.display = "block";
+            fixSearch.className = "fixMove";
+        } else {
+            fixSearch.style.display = "none";
+            fixSearch.className = "";
+        }
+    };
+</script>
